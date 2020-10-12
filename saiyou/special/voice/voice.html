@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../js/plugin/aos/aos.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/voice.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section id="voice">
+            <div class="container">
+                <div class="text-top font20M">
+                    <p class="line1">
+                        <span>来春入社予定の内定者49名が、自分たちの就職活動を振り返りました。</span>
+                        <span>本音で、ざっくばらんな意見を、そのままここに公開してしまいます。</span>
+                        <span>就活をする皆さんに役立ちそうなアンケート内容を内定者で考え、そのアンケートに答えたものをまとめました。</span>
+                    </p>
+                    <p class="line2">内定者のリアルな声が、少しでも皆さんの就活にお役に立てばと思います。</p>
+                </div>
+                <div class="voice-bttn">
+                    <button class="voice-tab1 font24b green ele-hover active">内定者にアンケート結果を公開</button>
+                    <button class="voice-tab2 font24b yellow ele-hover">内定者の代表8人の素顔</button>
+                </div>
+            </div>
+            <div class="trans-tap">
+                <div class="voice-main active">
+                    <div class="container">
+                        <div class="voice-board board1">
+                            <div class="container">
+                                <h2 class="voice-title font41">DOWA内定者の属性を公開！</h2>
+                            </div>
+                            <p class="voice-p">
+                                <span>内定者が就職活動中に知りたかったことの一つが、先輩たちがどんな活動をしたのかということ。</span>
+                                <span>そこで、今回内定者全員に就職活動を振り返ってもらうアンケートを実施しました。</span>
+                            </p>
+                        </div>
+                        <ul class="voice-multiPie">
+                            <li class="multiPie-per">
+                                <h3 class="voice-h3 font20b">男女比って？</h3>
+                                <svg id="pie1"></svg>
+                            </li>
+                            <li class="pie-per">
+                                <h3 class="voice-h3 font20b">私たちの文理比</h3>
+                                <svg id="pie2"></svg>
+                            </li>
+                            <li class="pie-per">
+                                <h3 class="voice-h3 font20b">私たちの専攻は？</h3>
+                                <svg id="pie3"></svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <section class="industry">
+                        <div class="industry-title style-question">
+                            <span class="bg-color orange right"></span>
+                            <div class="container">
+                                <div class="wrap-inner">
+                                    <h3 class="title-q">志望業界について</h3>
+                                    <figure>
+                                        <img src="../../images/voice/voice1/img_photo01.png" alt="志望業界について">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="industry-q question1">
+                                <dl class="title-question orange">
+                                    <dt>Q</dt>
+                                    <dd>ズバリ志望業界は? (複数回答あり)</dd>
+                                </dl>
+                                <div class="industry-chart pie1">
+                                    <svg id="industry-pie1"></svg>
+                                </div>
+                                <p class="voice-p">
+                                    <span>来春DOWAの同期となる仲間は、やはり素材系のメーカー志望度が高いようです。</span>
+                                    <span>では、なぜ素材業界・非鉄業界に魅力を感じたのかを聞いてみました。</span>
+                                </p>
+                                <div class="industry-board">
+                                    <dl>
+                                        <dt>
+                                            <img src="../../images/voice/voice1/img_voice01.png" alt="内定者の声">
+                                        </dt>
+                                        <dd class="font24b">内定者の声</dd>
+                                    </dl>
+                                    <ul>
+                                        <li>産業においての川上から川下まで携わることができ、製品の素となる素材を扱うことで、社会全体に貢献できる</li>
+                                        <li>あらゆる業界の根幹であり、社会に占める重要性が高いこと。安定性がある</li>
+                                        <li>5G、IoT、自動車のCASEなど私たちの生活の未来を幅広く支えられる点。</li>
+                                        <li>沢山の活用方法があり、無限の可能性があると思ったから</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="industry-q question2">
+                                <dl class="title-question orange">
+                                    <dt>Q</dt>
+                                    <dd>エネルギー・資源・素材業界の中で、さらに志望していた業界は? (複数回答あり)</dd>
+                                </dl>
+                                <div class="industry-chart col">
+                                    <svg id="industry-col1"></svg>
+                                </div>
+                                <p class="voice-p">では、志望業界について、どんな変遷をたどったのか、ある内定者のケースを紹介しましょう。</p>
+                                <ul>
+                                    <li class="title font24b">文系のAさん</li>
+                                    <li class="bg-content">8月:就活を始めるに当たって、とりあえず知っている企業（電機、自動車メーカー）を見始める。</li>
+                                    <li class="arrow">
+                                        <span></span>
+                                    </li>
+                                    <li class="bg-content">
+                                        <span>9月:大学の先輩から話を聞き、デベロッパーに興味を持ち始める。</span>
+                                        <span>が、インターン、説明会に参加し、業界の雰囲気が合わないと思い、やめる。</span>
+                                    </li>
+                                    <li class="arrow">
+                                        <span></span>
+                                    </li>
+                                    <li class="bg-content">
+                                        <span>10月:たまたま参加した他の素材メーカーの座談会から、</span>
+                                        <span>素材の裾野の広さ、可能性に目覚め、素材メーカー全般を見始める。</span>
+                                    </li>
+                                    <li class="arrow">
+                                        <span></span>
+                                    </li>
+                                    <li class="bg-content color">8月〜12月:学内説明会等に参加し、他業界の話を聞き、就職四季報を見ながら業界を絞る。</li>
+                                </ul>
+                                <ul>
+                                    <li class="title font24b">理系のBさん</li>
+                                    <li class="bg-content">8月～：学科や研究室が化学系だったこともあり漠然と化学、素材、繊維などの業界を調べ始める。</li>
+                                    <li class="arrow">
+                                        <span></span>
+                                    </li>
+                                    <li class="bg-content color">
+                                        <span>12月～1月：就活本番前にもう少しいろいろな業界も見ておこうと考え、</span>
+                                        <span>機械、電機に関わりがある業界の説明会にも参加。そこでたまたま非鉄業界を知る。</span>
+                                        <span>非鉄金属は身の回りのあらゆるものに使われており、製品自体の可能性を広げられる点に興味を持つ。</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="aspiration">
+                        <div class="aspiration-title style-question">
+                            <span class="bg-color green left"></span>
+                            <div class="container">
+                                <div class="wrap-inner">
+                                    <figure>
+                                        <img src="../../images/voice/voice1/img_photo02.png" alt="ぶっちゃけDOWAへの志望度は?">
+                                    </figure>
+                                    <h3 class="title-q">ぶっちゃけDOWAへの志望度は?</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="aspiration-chart pie">
+                                <svg id="aspiration-pie1"></svg>
+                            </div>
+                            <p class="voice-p">内定者の3/4がDOWAを第一志望としていました。しかし、第一志望群ではなかった内定者もいましたが、最終的にはDOWAを選んだのは、活動中に何かピンとくるものがあったから。</p>
+                            <p class="voice-p">では、企業選びのポイントや最終的にDOWAを選んだ理由、選ぶ際に不安だったこと、選考時に感じたことなどについて紹介します。</p>
+                            <div class="aspiration-q question1">
+                                <dl class="title-question green">
+                                    <dt>Q</dt>
+                                    <dd>就活中に重視したポイントは?　(複数回答あり)</dd>
+                                </dl>
+                                <p class="voice-p">私たちが企業選びの際に、特に重視したポイントについて紹介します。</p>
+                                <div class="aspiration-chart col">
+                                    <svg id="aspiration-col1"></svg>
+                                </div>
+                                <p class="voice-p">圧倒的に「社風・人」を重視していることが分かります。DOWAの社風に共感した内定者が多そうですね。</p>
+                                <p class="voice-p">また、「仕事内容」や「会社の成長性」、「社会貢献度」も重視しますが、「福利厚生」や「職場環境」など働きやすい職場かどうかも気にしているようです。</p>
+                            </div>
+                            <div class="aspiration-q question2">
+                                <dl class="title-question green">
+                                    <dt>Q</dt>
+                                    <dd>DOWAの不安なことは？</dd>
+                                </dl>
+                                <ul class="style-ul green">
+                                    <li><span>工場などの地方勤務になった場合、不便そうだと感じた</span></li>
+                                    <li>
+                                        <span>「全国転勤」には不安を感じた。しかし、その後社員から転勤先での経験を聞く中で、</span>
+                                        <span>全国転勤も楽しそうで「大丈夫!」と感じることができた</span>
+                                    </li>
+                                    <li>
+                                        <span>不安よりも面接を重ねる毎に志望度が高くなった</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aspiration-q question3">
+                                <dl class="title-question green">
+                                    <dt>Q</dt>
+                                    <dd>就職先として、DOWAを選んだポイントは？</dd>
+                                </dl>
+                                <ul class="style-ul green">
+                                    <li><span>会った社員が皆楽しく仕事をしているように見え、とても魅力的だった</span></li>
+                                    <li>
+                                        <span>少数精鋭で若いうちからやりがいを持って仕事ができると思ったから</span>
+                                    </li>
+                                    <li>
+                                        <span>面接で自分の素を1番出すことができ、それを評価していただけたこと</span>
+                                    </li>
+                                    <li>
+                                        <span>仕事内容と海外勤務のチャンスに惹かれたから。また10年後に潰れることはないと思った。</span>
+                                    </li>
+                                    <li>
+                                        <span>働いていて楽しそう4割、社員の方が魅力的4割、人事のゴリ推し2割</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aspiration-q question4">
+                                <dl class="title-question green">
+                                    <dt>Q</dt>
+                                    <dd>DOWAの説明会や選考で印象に残っていることは？</dd>
+                                </dl>
+                                <ul class="style-ul green">
+                                    <li><span>最終面接や人事面接の際、とても話しやすい雰囲気を作ってくれたこと</span></li>
+                                    <li>
+                                        <span>質問の内容が他社とは違うものが多く印象に残った。マイナス部分よりもプラス部分を探そうとしてくれているように感じた</span>
+                                    </li>
+                                    <li>
+                                        <span>最終面接で趣味の話をしたら渋いねと言われ笑ってもらえたこと</span>
+                                    </li>
+                                    <li>
+                                        <span>最終の技術面接で、用意した資料の中の自作した図を褒められたこと</span>
+                                    </li>
+                                    <li>
+                                        <span>オンライン面接時、壁の白さを褒められたこと</span>
+                                    </li>
+                                    <li>
+                                        <span>SNSライブ並みの雰囲気の軽さをWeb説明会で感じ、社風や人柄がすごく理解できたことが印象的だった</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aspiration-q question4">
+                                <dl class="title-question green">
+                                    <dt>Q</dt>
+                                    <dd>ぶっちゃけDOWA社員への印象は？</dd>
+                                </dl>
+                                <ul class="style-ul green">
+                                    <li><span>笑顔で明るい（皆さん笑顔が印象的で、ほかの会社のような固い雰囲気はほとんど感じない）</span></li>
+                                    <li>
+                                        <span>気さくな人が多く、お酒好き</span>
+                                    </li>
+                                    <li>
+                                        <span>浪人、留年、院試落ちなど、何かしら挫折を味わっている方が多い</span>
+                                    </li>
+                                    <li>
+                                        <span>おかしな部分にちらほらと真面目なところが垣間見える</span>
+                                    </li>
+                                    <li>
+                                        <span>本音でさまざまな事を話してくれている感じがした</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="job">
+                        <div class="iob-title style-question">
+                            <span class="bg-color violet right"></span>
+                            <div class="container">
+                                <div class="wrap-inner">
+                                    <h3 class="title-q">就職活動こぼれ話</h3>
+                                    <figure>
+                                        <img src="../../images/voice/voice1/img_photo03.png" alt="ぶっちゃけDOWAへの志望度は?">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <p class="voice-p line-first">内定者の数だけ、涙あり笑いありの就活エピソードがあります。内定者のさまざまな体験から興味深い内容のものをピックアップして公開します。これから就活に挑む皆さんの「いざ!」という際の助けになれば幸いです。</p>
+                            <div class="job-q question1">
+                                <dl class="title-question violet">
+                                    <dt>Q</dt>
+                                    <dd>就活中大変だったことは？</dd>
+                                </dl>
+                                <ul class="style-ul violet">
+                                    <li><span>研究活動と就活の両立。ストレスを感じたこともありました・・・</span></li>
+                                    <li>
+                                        <span>リモートでの活動の中で，自分の伝えたいことがどの程度伝わっているか分かりづらかった</span>
+                                    </li>
+                                    <li>
+                                        <span>メールでやり取りする際の言葉遣いや文書の書き方</span>
+                                    </li>
+                                    <li>
+                                        <span>食べてストレス発散をしていたら、スーツがきつくなってしまった</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="job-q question2">
+                                <dl class="title-question violet">
+                                    <dt>Q</dt>
+                                    <dd>就活でほっこりした話</dd>
+                                </dl>
+                                <ul class="style-ul violet">
+                                    <li><span>Web面接の待機ルームでお互いを社員だと勘違いし挨拶</span></li>
+                                    <li>
+                                        <span>説明会や面接の待合室で同じ就活生と談笑し，ライバルでもあるがお互いに励ましあうことができた</span>
+                                    </li>
+                                    <li>
+                                        <span>オンライン面接で面接官が自宅を紹介してくれた</span>
+                                    </li>
+                                    <li>
+                                        <span>緊張でほっこりどころじゃなかった・・・</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="job-q question3">
+                                <dl class="title-question violet">
+                                    <dt>Q</dt>
+                                    <dd>就活でやってしまった失敗談は？</dd>
+                                </dl>
+                                <ul class="style-ul violet">
+                                    <li><span>いただいたメールがすべて迷惑メールフォルダに入っていたこと。さらに、その事実にメールを受け取ってから1週間後に気づいたこと</span></li>
+                                    <li>
+                                        <span>自分の素を見てほしかったのでフランクに話過ぎたこと</span>
+                                    </li>
+                                    <li>
+                                        <span>緊張して変な言葉遣いになってしまった</span>
+                                    </li>
+                                    <li>
+                                        <span>訪問先の企業のビル内で迷子になりかけたこと</span>
+                                    </li>
+                                    <li>
+                                        <span>オンライン座談会の時間を1時間間違え、無断欠席してしまったこと。その後、丁寧にお詫びを入れました(汗)</span>
+                                    </li>
+                                    <li>
+                                        <span>選考時の旅費の立替払いで、クレジットカードが上限になる</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="voice-p end">いかがでしょうか?　皆さんにとって役立つ情報はありましたか。このページを見て、もっとDOWAのことを知りたい、社員に会ってみたいと思ったら、あなたも立派なDOWAサポーターです。</p>
+                            <p class="voice-p notice">2021年度入社予定者一同</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="container">
+                <div class="voice-bttn-link">
+                    <a href="#link" class="hover-effect active"><span class="font24b">内定者の声</span></a>
+                    <a href="#link" class="hover-effect"><span class="font24b">若手社員成長の軌跡</span></a>
+                    <a href="#link" class="hover-effect"><span class="font24b">360度拠点紹介</span></a>
+                    <a href="#link" class="hover-effect"><span class="font24b">若手社員の研修参加レポート</span></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src='../../js/plugin/d3/jquery-2.2.4.min.js'></script>
+    <script src='../../js/plugin/aos/aos.js'></script>
+    <script src='../../js/plugin/d3/d3.min.js'></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/voice.js"></script>
+</body>
+</html>
