@@ -1,0 +1,513 @@
+%c-main {
+    coloe: #02899f
+}
+
+$c-main: #02899f;
+
+%font-noto {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+%font-robot {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#training {
+
+    /**
+     * common
+     */
+
+    .color-green {
+        color: #b0dd1e;
+    }
+
+    .bg-green {
+        background-color: #b0dd1e;
+    }
+
+    .color-pink {
+        color: #ed43ac;
+    }
+
+    .bg-pink {
+        background-color: #ed43ac;
+    }
+
+    .color-pink2 {
+        color: #ad5291;
+    }
+
+    .bg-pink2 {
+        background-color: #ad5291;
+    }
+
+    .color-default {
+        color: #333;
+    }
+
+
+
+    .flex {
+        display: flex;
+    }
+
+    /**
+     * heading css
+     * -----------------------
+     */
+    .heading {
+        font-size: 4rem;
+        color: $c-main;
+        font-weight: 700;
+        text-align: left;
+
+        &.center {
+            text-align: center;
+        }
+    }
+
+    .title {
+        line-height: 1;
+
+        &.left {
+            text-align: left;
+        }
+
+        span {
+            color: #333;
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+    }
+
+    .text-desc {
+        font-size: 1.6rem;
+        color: #333;
+
+        span {
+            display: block;
+        }
+    }
+
+    /**
+     * background image
+     */
+
+    .bg-decoration {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+
+    /**
+     * step css
+     * -------------------------------
+     */
+
+
+    .step {
+
+        &__step {
+            width: 100%;
+            max-width: 53rem;
+            padding-top: 4rem;
+            position: relative;
+
+            img {
+                display: block;
+            }
+        }
+
+        &-step {
+            position: absolute;
+            color: #008ea0;
+            font-weight: 700;
+            top: 0%;
+            left: 0%;
+            transform: translate(45px, -10px);
+            font-size: 2.4rem;
+
+            span {
+                @extend %font-robot;
+                font-size: 12rem;
+                line-height: 1;
+            }
+        }
+    }
+
+
+    .avatar {
+        display: block;
+        min-width: 12rem;
+        height: 12rem;
+
+        &.avatar--green {
+            background-color: #b0dd1e;
+        }
+
+        &.avatar--pink1 {
+            background-color: #ed43ac;
+        }
+
+        &.avatar--pink2 {
+            background-color: #ad5291;
+        }
+    }
+
+    /**
+     * transition: all .3s ease;
+            &:hover{
+                opacity: .8;
+            }
+
+     * end-common -------------------------------------------------------
+     * ----------------------------------------------------------
+     * ----------------------------------------------------
+     * -----------------------------------------------
+     * ----------------------------
+     * ----------------------
+     * ----------------
+     * ---------
+     * -----
+     * --
+     * -
+     */
+
+
+    /**
+     * train css
+     * ------------------------------------
+     */
+
+    .train {
+        text-align: center;
+        padding: 0 4rem;
+
+        &__inner {}
+
+        &__table {
+            margin-top: 5rem;
+            padding-bottom: 1rem;
+            overflow-x: auto;
+
+            .t-table {
+                margin-top: 3rem;
+                min-width: 100rem;
+                width: 100%;
+                border-spacing: 2px;
+                border-collapse: separate;
+
+                .t-head {
+                    th {
+                        height: 6rem;
+                        // padding: 2rem 3rem;
+                        background-color: #67b8c5;
+                        color: #fff;
+                        font-weight: 700;
+                        box-shadow: 0 0 3px #d5d5d5;
+
+                        span {
+                            width: 100%;
+                            height: 100%;
+                            padding: 1rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        &:nth-of-type(1) {
+                            width: 13rem;
+                        }
+
+                        &:nth-of-type(2) {
+                            width: 31rem;
+                        }
+
+                        &:nth-of-type(3) {
+                            width: 31rem;
+                        }
+
+                        &:nth-of-type(4) {
+                            width: 18rem;
+                        }
+
+                        &:nth-of-type(5) {
+                            width: 6rem;
+                            font-size: 2.4rem;
+                            background-color: #02899f;
+                        }
+                    }
+                }
+
+                .t-body {
+
+                    td {
+                        height: 8rem;
+                        padding: .5rem;
+                        box-shadow: 0 0 3px #d5d5d5;
+
+                        span {
+                            width: 100%;
+                            height: 100%;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            vertical-align: middle;
+                            font-weight: 700;
+                        }
+
+                        &:not(:nth-of-type(1)) {
+                            span {
+                                color: #02899f;
+                                border-radius: 1rem;
+                                background-color: #e5f3f5;
+                            }
+
+                        }
+                    }
+                }
+
+                .t-footer {
+                    box-shadow: 0 3px 6px #ddd;
+                }
+            }
+        }
+    }
+
+    /**
+     * voice css
+     * ------------------------------------
+     */
+    .voice {
+        position: relative;
+        margin-top: 8rem;
+        overflow: hidden;
+
+        &__inner {
+
+            .heading {
+                text-align: center;
+            }
+
+            .top-img {
+                max-width: 80rem;
+                width: 100%;
+                border-radius: 3rem;
+                overflow: hidden;
+                margin-top: 5rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .step {
+                margin-top: 4rem;
+
+                &__step,
+                &__desc {
+                    margin-left: auto;
+                }
+
+                &__desc {
+                    width: 100%;
+                    max-width: 72rem;
+                    margin-top: 1.5rem;
+
+                    p {
+                        line-height: 2.5;
+                    }
+                }
+
+            }
+        }
+
+        .bg-decoration {
+            top: 25rem;
+            opacity: .3;
+            overflow: hidden;
+
+            img {
+                filter: blur(10px);
+            }
+
+            // &::before{
+            //     content: '';
+            //     width: 100%;
+            //     height: 100%;
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     background-color: #ddd;
+            //     opacity:.6;
+            // }
+        }
+    }
+
+
+    /**
+     * user comment css
+     * ------------------------------------
+     */
+
+    .comment-area {
+
+        .comment {
+            width: 100%;
+            max-width: 74%;
+
+            &-block {
+                width: 100%;
+                display: flex;
+                margin-top: 5rem;
+            }
+
+            &-wrap {
+                width: 100%;
+                padding-left: 3rem;
+            }
+        }
+
+
+
+        .comment-aside {
+            width: 100%;
+            max-width: 26%;
+            position: relative;
+            padding-left: 3rem;
+
+            .circle--small,
+            .circle--big {
+                border-radius: 50%;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .circle--small {
+                width: 28rem;
+                height: 28rem;
+                border: 2rem solid #02899f;
+                top: 5rem;
+            }
+
+            .circle--big {
+                width: 40rem;
+                height: 40rem;
+                border: 2rem solid #f2e54a;
+                position: relative;
+                left: 5.5rem;
+                top: -3rem;
+                z-index: -1;
+            }
+        }
+    }
+
+
+
+    /**
+     * lecturer css
+     * ----------------------------------------------
+     */
+    .lecturer-area {
+        position: relative;
+
+        .bg-decoration {}
+
+        .heading {
+            color: #fff;
+        }
+    }
+
+    .lectbox {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding: 4rem;
+        background-color: #fff;
+        border-radius: 4rem;
+        border: 2rem solid #02899f;
+        overflow: hidden;
+
+        &-avatar {
+            min-width: 28rem;
+            height: 24rem;
+            padding: 0 2rem;
+            overflow: hidden;
+            border-radius: 50%;
+            display: block;
+        }
+
+        &-infor {
+            padding: 0 2rem;
+        }
+
+
+        &-logo {
+            width: 24rem;
+            margin-bottom: 2rem;
+        }
+
+        &-ver {
+            color: #02899f;
+            font-size: 1.6rem;
+        }
+
+        &-name {
+            font-size: 2.4rem;
+            ;
+            color: #02899f;
+            display: block;
+            line-height: 1;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+
+    /**
+     * chat box 
+     * ------------------------------------------------
+     */
+    .chat-area{
+        
+        .chat-item{
+            position: relative;
+
+            &__inside{
+                padding: 4rem;
+                display: flex;
+                align-items: center;
+                border-radius: 2rem;
+                overflow: hidden;
+                box-shadow: 0 0 1rem rgba(#000, .6);
+            }
+            
+
+            &:nth-of-type(odd){
+                background-color: #f2e54a;
+                
+
+                &::before{
+                    content: '';
+                    width: 3rem;
+                    height: 6rem;
+                    position: absolute;
+                    background-color: #f2e54a;
+                    left: 0;
+                    top: 50%;
+                    box-shadow: 0 0 10px black;
+                    transform: translate(-100%, -50%);
+                }
+            }
+
+            &:nth-of-type(even){
+                background-color: #fff;
+            }
+        }
+    }
+
+}

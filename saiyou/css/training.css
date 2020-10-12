@@ -1,0 +1,374 @@
+#training .step-step span {
+  font-family: "Roboto", sans-serif;
+}
+
+#training {
+  /**
+   * common
+   */
+  /**
+   * heading css
+   * -----------------------
+   */
+  /**
+   * background image
+   */
+  /**
+   * step css
+   * -------------------------------
+   */
+  /**
+   * transition: all .3s ease;
+          &:hover{
+              opacity: .8;
+          }
+
+   * end-common -------------------------------------------------------
+   * ----------------------------------------------------------
+   * ----------------------------------------------------
+   * -----------------------------------------------
+   * ----------------------------
+   * ----------------------
+   * ----------------
+   * ---------
+   * -----
+   * --
+   * -
+   */
+  /**
+   * train css
+   * ------------------------------------
+   */
+  /**
+   * voice css
+   * ------------------------------------
+   */
+  /**
+   * user comment css
+   * ------------------------------------
+   */
+  /**
+   * lecturer css
+   * ----------------------------------------------
+   */
+  /**
+   * chat box 
+   * ------------------------------------------------
+   */
+}
+#training .color-green {
+  color: #b0dd1e;
+}
+#training .bg-green {
+  background-color: #b0dd1e;
+}
+#training .color-pink {
+  color: #ed43ac;
+}
+#training .bg-pink {
+  background-color: #ed43ac;
+}
+#training .color-pink2 {
+  color: #ad5291;
+}
+#training .bg-pink2 {
+  background-color: #ad5291;
+}
+#training .color-default {
+  color: #333;
+}
+#training .flex {
+  display: flex;
+}
+#training .heading {
+  font-size: 4rem;
+  color: #02899f;
+  font-weight: 700;
+  text-align: left;
+}
+#training .heading.center {
+  text-align: center;
+}
+#training .title {
+  line-height: 1;
+}
+#training .title.left {
+  text-align: left;
+}
+#training .title span {
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+#training .text-desc {
+  font-size: 1.6rem;
+  color: #333;
+}
+#training .text-desc span {
+  display: block;
+}
+#training .bg-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#training .step__step {
+  width: 100%;
+  max-width: 53rem;
+  padding-top: 4rem;
+  position: relative;
+}
+#training .step__step img {
+  display: block;
+}
+#training .step-step {
+  position: absolute;
+  color: #008ea0;
+  font-weight: 700;
+  top: 0%;
+  left: 0%;
+  transform: translate(45px, -10px);
+  font-size: 2.4rem;
+}
+#training .step-step span {
+  font-size: 12rem;
+  line-height: 1;
+}
+#training .avatar {
+  display: block;
+  min-width: 12rem;
+  height: 12rem;
+}
+#training .avatar.avatar--green {
+  background-color: #b0dd1e;
+}
+#training .avatar.avatar--pink1 {
+  background-color: #ed43ac;
+}
+#training .avatar.avatar--pink2 {
+  background-color: #ad5291;
+}
+#training .train {
+  text-align: center;
+  padding: 0 4rem;
+}
+#training .train__table {
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+  overflow-x: auto;
+}
+#training .train__table .t-table {
+  margin-top: 3rem;
+  min-width: 100rem;
+  width: 100%;
+  border-spacing: 2px;
+  border-collapse: separate;
+}
+#training .train__table .t-table .t-head th {
+  height: 6rem;
+  background-color: #67b8c5;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 0 3px #d5d5d5;
+}
+#training .train__table .t-table .t-head th span {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#training .train__table .t-table .t-head th:nth-of-type(1) {
+  width: 13rem;
+}
+#training .train__table .t-table .t-head th:nth-of-type(2) {
+  width: 31rem;
+}
+#training .train__table .t-table .t-head th:nth-of-type(3) {
+  width: 31rem;
+}
+#training .train__table .t-table .t-head th:nth-of-type(4) {
+  width: 18rem;
+}
+#training .train__table .t-table .t-head th:nth-of-type(5) {
+  width: 6rem;
+  font-size: 2.4rem;
+  background-color: #02899f;
+}
+#training .train__table .t-table .t-body td {
+  height: 8rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 3px #d5d5d5;
+}
+#training .train__table .t-table .t-body td span {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  font-weight: 700;
+}
+#training .train__table .t-table .t-body td:not(:nth-of-type(1)) span {
+  color: #02899f;
+  border-radius: 1rem;
+  background-color: #e5f3f5;
+}
+#training .train__table .t-table .t-footer {
+  box-shadow: 0 3px 6px #ddd;
+}
+#training .voice {
+  position: relative;
+  margin-top: 8rem;
+  overflow: hidden;
+}
+#training .voice__inner .heading {
+  text-align: center;
+}
+#training .voice__inner .top-img {
+  max-width: 80rem;
+  width: 100%;
+  border-radius: 3rem;
+  overflow: hidden;
+  margin-top: 5rem;
+}
+#training .voice__inner .top-img img {
+  width: 100%;
+}
+#training .voice__inner .step {
+  margin-top: 4rem;
+}
+#training .voice__inner .step__step, #training .voice__inner .step__desc {
+  margin-left: auto;
+}
+#training .voice__inner .step__desc {
+  width: 100%;
+  max-width: 72rem;
+  margin-top: 1.5rem;
+}
+#training .voice__inner .step__desc p {
+  line-height: 2.5;
+}
+#training .voice .bg-decoration {
+  top: 25rem;
+  opacity: 0.3;
+  overflow: hidden;
+}
+#training .voice .bg-decoration img {
+  filter: blur(10px);
+}
+#training .comment-area .comment {
+  width: 100%;
+  max-width: 74%;
+}
+#training .comment-area .comment-block {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+}
+#training .comment-area .comment-wrap {
+  width: 100%;
+  padding-left: 3rem;
+}
+#training .comment-area .comment-aside {
+  width: 100%;
+  max-width: 26%;
+  position: relative;
+  padding-left: 3rem;
+}
+#training .comment-area .comment-aside .circle--small,
+#training .comment-area .comment-aside .circle--big {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+#training .comment-area .comment-aside .circle--small {
+  width: 28rem;
+  height: 28rem;
+  border: 2rem solid #02899f;
+  top: 5rem;
+}
+#training .comment-area .comment-aside .circle--big {
+  width: 40rem;
+  height: 40rem;
+  border: 2rem solid #f2e54a;
+  position: relative;
+  left: 5.5rem;
+  top: -3rem;
+  z-index: -1;
+}
+#training .lecturer-area {
+  position: relative;
+}
+#training .lecturer-area .heading {
+  color: #fff;
+}
+#training .lectbox {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 4rem;
+  border: 2rem solid #02899f;
+  overflow: hidden;
+}
+#training .lectbox-avatar {
+  min-width: 28rem;
+  height: 24rem;
+  padding: 0 2rem;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+}
+#training .lectbox-infor {
+  padding: 0 2rem;
+}
+#training .lectbox-logo {
+  width: 24rem;
+  margin-bottom: 2rem;
+}
+#training .lectbox-ver {
+  color: #02899f;
+  font-size: 1.6rem;
+}
+#training .lectbox-name {
+  font-size: 2.4rem;
+  color: #02899f;
+  display: block;
+  line-height: 1;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+#training .chat-area .chat-item {
+  position: relative;
+}
+#training .chat-area .chat-item__inside {
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+}
+#training .chat-area .chat-item:nth-of-type(odd) {
+  background-color: #f2e54a;
+}
+#training .chat-area .chat-item:nth-of-type(odd)::before {
+  content: "";
+  width: 3rem;
+  height: 6rem;
+  position: absolute;
+  background-color: #f2e54a;
+  left: 0;
+  top: 50%;
+  box-shadow: 0 0 10px black;
+  transform: translate(-100%, -50%);
+}
+#training .chat-area .chat-item:nth-of-type(even) {
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=training.css.map */
