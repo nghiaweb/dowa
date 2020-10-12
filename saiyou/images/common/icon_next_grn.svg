@@ -1,0 +1,19 @@
+<svg id="icon_arrow_grn.svg" xmlns="http://www.w3.org/2000/svg" width="18.781" height="14.6" viewBox="0 0 18.781 14.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #008ea0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #008ea0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <rect id="長方形_17_のコピー_2" data-name="長方形 17 のコピー 2" class="cls-1" y="5.8" width="18" height="2.7" rx="1.328" ry="1.328"/>
+  <path id="長方形_18_のコピー_2" data-name="長方形 18 のコピー 2" class="cls-2" d="M581.455,10294.7l5.812,5.8-5.812,5.8" transform="translate(-570 -10293.2)"/>
+</svg>

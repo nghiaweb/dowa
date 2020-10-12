@@ -1,0 +1,15 @@
+<svg id="icon_arrow.svg" xmlns="http://www.w3.org/2000/svg" width="54.91" height="44.72" viewBox="0 0 54.91 44.72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <rect id="長方形_17" data-name="長方形 17" y="17.84" width="52" height="8" rx="4" ry="4"/>
+  <path id="長方形_18" data-name="長方形 18" class="cls-1" d="M1494.1,6552.15l16.8,17.35-16.8,17.35" transform="translate(-1461 -6547.16)"/>
+</svg>

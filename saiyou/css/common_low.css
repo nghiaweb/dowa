@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* =====================
+  common
+===================== */
+
+main > section {
+	position: relative;
+}
+.sp-only{
+	display: none;
+}
+.pc-only{
+	display: block;
+}
+/* =====================
+  pankuzu
+===================== */
+
+#pankuzu{
+	background-color: #f2e54a;
+	padding: 20px;
+}
+
+#pankuzu ul li{
+	display: inline-block;
+}
+#pankuzu ul li a{
+	text-decoration: underline;
+}
+#pankuzu li::after {
+    content: "|";
+	color: #000;
+	display: inline-block;
+	padding: 0 15px;
+}
+#pankuzu li:last-child:after {
+	display: none;
+}
+
+
+/* =====================
+  pagetitle
+===================== */
+
+#pagetitle {
+	background: #b0dd1e;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	z-index: 0;
+}
+
+#pagetitle .container {
+	height: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#pagetitle .mv-img{
+	width: 50%;
+	z-index: 2;
+	top: 46px;
+	position: relative;
+}
+#pagetitle .ttl-wrap{
+	width: 29%;
+	padding-top: 14%;
+	position: relative;
+	z-index: 3;
+}
+#pagetitle .ttl-wrap h2 span{
+	font-size: 3.5rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+	display: block;
+	color: #f2e54a;
+}
+#pagetitle .ttl-wrap h2 img{
+	width: auto;
+}
+#pagetitle .ttl-wrap p{
+	margin-top: 17px;
+	line-height: 2.3;
+}
+#pagetitle:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    background: #fff;
+    transform: skew(0deg, -10deg);
+    padding-bottom: 200px;
+    margin-bottom: -200px;
+}
+#pagetitle .page-en-ttl{
+	text-shadow:1px 1px 0 #67aebb,-1px 1px 0 #67aebb,1px -1px 0 #67aebb,-1px -1px 0 #67aebb;
+	font-size: 20vw;
+	position: absolute;
+	color: #fff;
+	z-index: 1;
+	left: -20px;
+	top: 54%;
+}
+
+
+
+/* ====================================================================================
+		:hover
+==================================================================================== */
+@media screen and (min-width: 1024px) {
+
+	
+}
+
+
+/* ====================================================================================
+		tablet
+==================================================================================== */
+@media screen and (max-width: 1023px) {
+
+
+}
+
+
+
+/* ====================================================================================
+		SP
+==================================================================================== */
+
+@media screen and (max-width: 767px) {
+	
+	.sp-only{
+		display: block;
+	}
+	.pc-only{
+		display: none;
+	}
+	
+	#pankuzu {
+		padding: 10px 20px;
+	}
+	#pankuzu ul li {
+		font-size: 1.4rem;
+	}
+	
+	#pagetitle .ttl-wrap {
+		width: 46%;
+		padding-top: 14%;
+	}
+	#pagetitle .ttl-wrap h2 span {
+		font-size: 1.8rem;
+		margin-bottom: 10px;
+	}
+	#pagetitle .ttl-wrap h2 img {
+		width: 82%;
+	}
+	#pagetitle .page-en-ttl {
+		top: 83%;
+		font-size: 17vw;
+		left: -11px;
+	}
+	#pagetitle .ttl-wrap p {
+		margin-top: 0px;
+		line-height: 1.6;
+		font-size: 1.2rem;
+	}
+}
