@@ -12,7 +12,7 @@
   <meta property="og:site_name" content="DOWAホールディングス｜採用サイト">
   <meta property="og:description" content="">
   <meta itemprop="image" content="">
-  <title>SPECIAL｜DOWAホールディングス｜採用サイト</title>
+  <title>Voice｜DOWAホールディングス｜採用サイト</title>
 
   <link href="../../css/common_low.css" rel="stylesheet">
   <link href="../../css/report.css" rel="stylesheet" type="text/css">
