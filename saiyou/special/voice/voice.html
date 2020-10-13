@@ -1,0 +1,685 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../js/plugin/aos/aos.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/voice.css">
+    <link rel="stylesheet" href="../../css/voice02.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section id="voice">
+            <div class="container">
+                <div class="text-top font20M">
+                    <p class="line1">
+                        <span>来春入社予定の内定者49名が、自分たちの就職活動を振り返りました。</span>
+                        <span>本音で、ざっくばらんな意見を、そのままここに公開してしまいます。</span>
+                        <span>就活をする皆さんに役立ちそうなアンケート内容を内定者で考え、そのアンケートに答えたものをまとめました。</span>
+                    </p>
+                    <p class="line2">内定者のリアルな声が、少しでも皆さんの就活にお役に立てばと思います。</p>
+                </div>
+                <div class="voice-bttn">
+                    <button class="voice-tab1 font24b green ele-hover active">内定者にアンケート結果を公開</button>
+                    <button class="voice-tab2 font24b yellow ele-hover">内定者の代表8人の素顔</button>
+                </div>
+            </div>
+            <div class="trans-tap">
+                <div class="voice-main green">
+                    <div class="container">
+                        <div class="voice-board board1">
+                            <div class="container">
+                                <h2 class="voice-title font41">DOWA内定者の属性を公開！</h2>
+                            </div>
+                            <p class="voice-p">
+                                <span>内定者が就職活動中に知りたかったことの一つが、先輩たちがどんな活動をしたのかということ。</span>
+                                <span>そこで、今回内定者全員に就職活動を振り返ってもらうアンケートを実施しました。</span>
+                            </p>
+                        </div>
+                        <ul class="voice-multiPie">
+                            <li class="multiPie-per">
+                                <h3 class="voice-h3 font20b">男女比って？</h3>
+                                <svg id="pie1"></svg>
+                            </li>
+                            <li class="pie-per">
+                                <h3 class="voice-h3 font20b">私たちの文理比</h3>
+                                <svg id="pie2"></svg>
+                            </li>
+                            <li class="pie-per">
+                                <h3 class="voice-h3 font20b">私たちの専攻は？</h3>
+                                <svg id="pie3"></svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <section class="industry">
+                        <div class="industry-title style-question">
+                            <span class="bg-color orange right"></span>
+                            <div class="container">
+                                <div class="wrap-inner">
+                                    <h3 class="title-q">志望業界について</h3>
+                                    <figure>
+                                        <img src="../../images/voice/voice1/img_photo01.png" alt="志望業界について">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="industry-q question1">
+                                <dl class="title-question orange">
+                                    <dt>Q</dt>
+                                    <dd>ズバリ志望業界は? (複数回答あり)</dd>
+                                </dl>
+                                <div class="industry-chart pie1">
+                                    <svg id="industry-pie1"></svg>
+                                </div>
+                                <p class="voice-p">
+                                    <span>来春DOWAの同期となる仲間は、やはり素材系のメーカー志望度が高いようです。</span>
+                                    <span>では、なぜ素材業界・非鉄業界に魅力を感じたのかを聞いてみました。</span>
+                                </p>
+                                <div class="industry-board">
+                                    <dl>
+                                        <dt>
+                                            <img src="../../images/voice/voice1/img_voice01.png" alt="内定者の声">
+                                        </dt>
+                                        <dd class="font24b">内定者の声</dd>
+                                    </dl>
+                                    <ul>
+                                        <li>産業においての川上から川下まで携わることができ、製品の素となる素材を扱うことで、社会全体に貢献できる</li>
+                                        <li>あらゆる業界の根幹であり、社会に占める重要性が高いこと。安定性がある</li>
+                                        <li>5G、IoT、自動車のCASEなど私たちの生活の未来を幅広く支えられる点。</li>
+                                        <li>沢山の活用方法があり、無限の可能性があると思ったから</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="industry-q question2">
+                                <dl class="title-question orange">
+                                    <dt>Q</dt>
+                                    <dd>エネルギー・資源・素材業界の中で、さらに志望していた業界は? (複数回答あり)</dd>
+                                </dl>
+                                <div class="industry-chart col">
+                                    <svg id="industry-col1"></svg>
+                                </div>
+                                <p class="voice-p">では、志望業界について、どんな変遷をたどったのか、ある内定者のケースを紹介しましょう。</p>
+                                <ul>
+                                    <li class="title font24b">文系のAさん</li>
+                                    <li class="bg-content">8月:就活を始めるに当たって、とりあえず知っている企業（電機、自動車メーカー）を見始める。</li>
+                                    <li class="arrow">
+                                        <span></span>
+                                    </li>
+                                    <li class="bg-content">
+                                        <span>9月:大学の先輩から話を聞き、デベロッパーに興味を持ち始める。</span>
+                                        <span>が、インターン、説明会に参加し、業界の雰囲気が合わないと思い、やめる。</span>
+                                    </li>
+                                    <li class="arrow">
+                                        <span></span>
+                                    </li>
+                                    <li class="bg-content">
+                                        <span>10月:たまたま参加した他の素材メーカーの座談会から、</span>
+                                        <span>素材の裾野の広さ、可能性に目覚め、素材メーカー全般を見始める。</span>
+                                    </li>
+                                    <li class="arrow">
+                                        <span></span>
+                                    </li>
+                                    <li class="bg-content color">8月〜12月:学内説明会等に参加し、他業界の話を聞き、就職四季報を見ながら業界を絞る。</li>
+                                </ul>
+                                <ul>
+                                    <li class="title font24b">理系のBさん</li>
+                                    <li class="bg-content">8月～：学科や研究室が化学系だったこともあり漠然と化学、素材、繊維などの業界を調べ始める。</li>
+                                    <li class="arrow">
+                                        <span></span>
+                                    </li>
+                                    <li class="bg-content color">
+                                        <span>12月～1月：就活本番前にもう少しいろいろな業界も見ておこうと考え、</span>
+                                        <span>機械、電機に関わりがある業界の説明会にも参加。そこでたまたま非鉄業界を知る。</span>
+                                        <span>非鉄金属は身の回りのあらゆるものに使われており、製品自体の可能性を広げられる点に興味を持つ。</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="aspiration">
+                        <div class="aspiration-title style-question">
+                            <span class="bg-color green left"></span>
+                            <div class="container">
+                                <div class="wrap-inner">
+                                    <figure>
+                                        <img src="../../images/voice/voice1/img_photo02.png" alt="ぶっちゃけDOWAへの志望度は?">
+                                    </figure>
+                                    <h3 class="title-q">ぶっちゃけDOWAへの志望度は?</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="aspiration-chart pie">
+                                <svg id="aspiration-pie1"></svg>
+                            </div>
+                            <p class="voice-p">内定者の3/4がDOWAを第一志望としていました。しかし、第一志望群ではなかった内定者もいましたが、最終的にはDOWAを選んだのは、活動中に何かピンとくるものがあったから。</p>
+                            <p class="voice-p">では、企業選びのポイントや最終的にDOWAを選んだ理由、選ぶ際に不安だったこと、選考時に感じたことなどについて紹介します。</p>
+                            <div class="aspiration-q question1">
+                                <dl class="title-question green">
+                                    <dt>Q</dt>
+                                    <dd>就活中に重視したポイントは?　(複数回答あり)</dd>
+                                </dl>
+                                <p class="voice-p">私たちが企業選びの際に、特に重視したポイントについて紹介します。</p>
+                                <div class="aspiration-chart col">
+                                    <svg id="aspiration-col1"></svg>
+                                </div>
+                                <p class="voice-p">圧倒的に「社風・人」を重視していることが分かります。DOWAの社風に共感した内定者が多そうですね。</p>
+                                <p class="voice-p">また、「仕事内容」や「会社の成長性」、「社会貢献度」も重視しますが、「福利厚生」や「職場環境」など働きやすい職場かどうかも気にしているようです。</p>
+                            </div>
+                            <div class="aspiration-q question2">
+                                <dl class="title-question green">
+                                    <dt>Q</dt>
+                                    <dd>DOWAの不安なことは？</dd>
+                                </dl>
+                                <ul class="style-ul green">
+                                    <li><span>工場などの地方勤務になった場合、不便そうだと感じた</span></li>
+                                    <li>
+                                        <span>「全国転勤」には不安を感じた。しかし、その後社員から転勤先での経験を聞く中で、</span>
+                                        <span>全国転勤も楽しそうで「大丈夫!」と感じることができた</span>
+                                    </li>
+                                    <li>
+                                        <span>不安よりも面接を重ねる毎に志望度が高くなった</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aspiration-q question3">
+                                <dl class="title-question green">
+                                    <dt>Q</dt>
+                                    <dd>就職先として、DOWAを選んだポイントは？</dd>
+                                </dl>
+                                <ul class="style-ul green">
+                                    <li><span>会った社員が皆楽しく仕事をしているように見え、とても魅力的だった</span></li>
+                                    <li>
+                                        <span>少数精鋭で若いうちからやりがいを持って仕事ができると思ったから</span>
+                                    </li>
+                                    <li>
+                                        <span>面接で自分の素を1番出すことができ、それを評価していただけたこと</span>
+                                    </li>
+                                    <li>
+                                        <span>仕事内容と海外勤務のチャンスに惹かれたから。また10年後に潰れることはないと思った。</span>
+                                    </li>
+                                    <li>
+                                        <span>働いていて楽しそう4割、社員の方が魅力的4割、人事のゴリ推し2割</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aspiration-q question4">
+                                <dl class="title-question green">
+                                    <dt>Q</dt>
+                                    <dd>DOWAの説明会や選考で印象に残っていることは？</dd>
+                                </dl>
+                                <ul class="style-ul green">
+                                    <li><span>最終面接や人事面接の際、とても話しやすい雰囲気を作ってくれたこと</span></li>
+                                    <li>
+                                        <span>質問の内容が他社とは違うものが多く印象に残った。マイナス部分よりもプラス部分を探そうとしてくれているように感じた</span>
+                                    </li>
+                                    <li>
+                                        <span>最終面接で趣味の話をしたら渋いねと言われ笑ってもらえたこと</span>
+                                    </li>
+                                    <li>
+                                        <span>最終の技術面接で、用意した資料の中の自作した図を褒められたこと</span>
+                                    </li>
+                                    <li>
+                                        <span>オンライン面接時、壁の白さを褒められたこと</span>
+                                    </li>
+                                    <li>
+                                        <span>SNSライブ並みの雰囲気の軽さをWeb説明会で感じ、社風や人柄がすごく理解できたことが印象的だった</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="aspiration-q question4">
+                                <dl class="title-question green">
+                                    <dt>Q</dt>
+                                    <dd>ぶっちゃけDOWA社員への印象は？</dd>
+                                </dl>
+                                <ul class="style-ul green">
+                                    <li><span>笑顔で明るい（皆さん笑顔が印象的で、ほかの会社のような固い雰囲気はほとんど感じない）</span></li>
+                                    <li>
+                                        <span>気さくな人が多く、お酒好き</span>
+                                    </li>
+                                    <li>
+                                        <span>浪人、留年、院試落ちなど、何かしら挫折を味わっている方が多い</span>
+                                    </li>
+                                    <li>
+                                        <span>おかしな部分にちらほらと真面目なところが垣間見える</span>
+                                    </li>
+                                    <li>
+                                        <span>本音でさまざまな事を話してくれている感じがした</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="job">
+                        <div class="iob-title style-question">
+                            <span class="bg-color violet right"></span>
+                            <div class="container">
+                                <div class="wrap-inner">
+                                    <h3 class="title-q">就職活動こぼれ話</h3>
+                                    <figure>
+                                        <img src="../../images/voice/voice1/img_photo03.png" alt="ぶっちゃけDOWAへの志望度は?">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <p class="voice-p line-first">内定者の数だけ、涙あり笑いありの就活エピソードがあります。内定者のさまざまな体験から興味深い内容のものをピックアップして公開します。これから就活に挑む皆さんの「いざ!」という際の助けになれば幸いです。</p>
+                            <div class="job-q question1">
+                                <dl class="title-question violet">
+                                    <dt>Q</dt>
+                                    <dd>就活中大変だったことは？</dd>
+                                </dl>
+                                <ul class="style-ul violet">
+                                    <li><span>研究活動と就活の両立。ストレスを感じたこともありました・・・</span></li>
+                                    <li>
+                                        <span>リモートでの活動の中で，自分の伝えたいことがどの程度伝わっているか分かりづらかった</span>
+                                    </li>
+                                    <li>
+                                        <span>メールでやり取りする際の言葉遣いや文書の書き方</span>
+                                    </li>
+                                    <li>
+                                        <span>食べてストレス発散をしていたら、スーツがきつくなってしまった</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="job-q question2">
+                                <dl class="title-question violet">
+                                    <dt>Q</dt>
+                                    <dd>就活でほっこりした話</dd>
+                                </dl>
+                                <ul class="style-ul violet">
+                                    <li><span>Web面接の待機ルームでお互いを社員だと勘違いし挨拶</span></li>
+                                    <li>
+                                        <span>説明会や面接の待合室で同じ就活生と談笑し，ライバルでもあるがお互いに励ましあうことができた</span>
+                                    </li>
+                                    <li>
+                                        <span>オンライン面接で面接官が自宅を紹介してくれた</span>
+                                    </li>
+                                    <li>
+                                        <span>緊張でほっこりどころじゃなかった・・・</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="job-q question3">
+                                <dl class="title-question violet">
+                                    <dt>Q</dt>
+                                    <dd>就活でやってしまった失敗談は？</dd>
+                                </dl>
+                                <ul class="style-ul violet">
+                                    <li><span>いただいたメールがすべて迷惑メールフォルダに入っていたこと。さらに、その事実にメールを受け取ってから1週間後に気づいたこと</span></li>
+                                    <li>
+                                        <span>自分の素を見てほしかったのでフランクに話過ぎたこと</span>
+                                    </li>
+                                    <li>
+                                        <span>緊張して変な言葉遣いになってしまった</span>
+                                    </li>
+                                    <li>
+                                        <span>訪問先の企業のビル内で迷子になりかけたこと</span>
+                                    </li>
+                                    <li>
+                                        <span>オンライン座談会の時間を1時間間違え、無断欠席してしまったこと。その後、丁寧にお詫びを入れました(汗)</span>
+                                    </li>
+                                    <li>
+                                        <span>選考時の旅費の立替払いで、クレジットカードが上限になる</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="voice-p end">いかがでしょうか?　皆さんにとって役立つ情報はありましたか。このページを見て、もっとDOWAのことを知りたい、社員に会ってみたいと思ったら、あなたも立派なDOWAサポーターです。</p>
+                            <p class="voice-p notice">2021年度入社予定者一同</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="voice-main yellow active">
+                    <div class="aspiration-title style-question">
+                        <span class="bg-color blue left"></span>
+                        <div class="container">
+                            <div class="wrap-inner">
+                                <figure>
+                                    <img src="../../images/voice/voice2/img_photo04.png" alt="内定者紹介?">
+                                </figure>
+                                <h3 class="title-q">内定者紹介?</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="brief-introduction">
+                            <p>私たちDOWAへの入社を控えた8人の内定者たちが、素顔をさらしだして学生時代に力を注いだこと、就職活動の振り返り、入社後にやりたいことを大公開します。</p>
+                            <p>まずは、自分をよく表す1枚の写真を使って、私たちメンバーの紹介を行います。</p>
+                        </div>
+                        <div class="candidate">
+                            <div class="candidate__child">
+                                <div class="candidate__child__info">
+                                    <figure><img src="../../images/voice/voice2/img_profile01.png"></figure>
+                                    <div class="candidate__child__info--name">
+                                        <h3>SAKAKI</h3>
+                                        <p>理工学部　創生工学科機械コース</p>
+                                    </div>
+                                </div>
+                                <div class="candidate__child__detail">
+                                    <p>●学生時代力を入れたこと<br>
+                                    筋力トレーニング。内容や食事を改善し筋力アップ。</p>
+                                    <p>●写真で自己紹介<br>
+                                        夏になると海や川に行ったり、バーベキューをしたりと自然の中で遊ぶことが好きです。<br>
+                                    自然に囲まれていると、日頃の疲れや悩みがリフレッシュされます。</p>
+                                </div>
+                            </div>
+                            <div class="candidate__child">
+                                <div class="candidate__child__info">
+                                    <figure><img src="../../images/voice/voice2/img_profile02.png"></figure>
+                                    <div class="candidate__child__info--name">
+                                        <h3>HASHIMOTO</h3>
+                                        <p>工学院　材料科学専攻</p>
+                                    </div>
+                                </div>
+                                <div class="candidate__child__detail">
+                                    <p>●学生時代力を入れたこと<br>
+                                    集団指導塾講師のアルバイト。伸び悩んでいた生徒の成績に貢献。</p>
+                                    <p>●写真で自己紹介<br>
+                                    北海道名物「スープカレー」にはまっています。数多くのお店に足を運び、お店ごとの強みを把握し、香辛料によるスープの深みを楽しんだり、辛さの限界に挑んだりしてます。</p>
+                                </div>
+                            </div>
+                            <div class="candidate__child">
+                                <div class="candidate__child__info">
+                                    <figure><img src="../../images/voice/voice2/img_profile03.png"></figure>
+                                    <div class="candidate__child__info--name">
+                                        <h3>HARANO</h3>
+                                        <p>国際資源学研究科　資源開発環境学専攻</p>
+                                    </div>
+                                </div>
+                                <div class="candidate__child__detail">
+                                    <p>●学生時代力を入れたこと<br>
+                                    研究活動。全力で報告会に取り組む。</p>
+                                    <p>●写真で自己紹介<br>
+                                    旅行が趣味です。観光スポットを巡ったり、おいしいものを食べたり、写真を撮ったりなどしながら休日を過ごしています。サクランボ狩りにもよく行きます。</p>
+                                </div>
+                            </div>
+                            <div class="candidate__child">
+                                <div class="candidate__child__info">
+                                    <figure><img src="../../images/voice/voice2/img_profile04.png"></figure>
+                                    <div class="candidate__child__info--name">
+                                        <h3>HIRAYAMA</h3>
+                                        <p>自然科学教育部　材料・応用化学専攻</p>
+                                    </div>
+                                </div>
+                                <div class="candidate__child__detail">
+                                    <p>●学生時代力を入れたこと<br>
+                                    研究活動。触媒に関するサンプル調製・物性評価・反応試験を試行錯誤。研究を通じ素材の可能性を実感。</p>
+                                    <p>●写真で自己紹介<br>
+                                    カフェでのアルバイトがきっかけでラテアートにはまり、自宅でも挑戦しています。写真はアルバイト先での一枚です。色々なデザインがあり、できるようになった際は、達成感もあり楽しいです。</p>
+                                </div>
+                            </div>
+                            <div class="candidate__child">
+                                <div class="candidate__child__info">
+                                    <figure><img src="../../images/voice/voice2/img_profile05.png"></figure>
+                                    <div class="candidate__child__info--name">
+                                        <h3>KAWAI</h3>
+                                        <p>経済学部　マネジメントシステム学科</p>
+                                    </div>
+                                </div>
+                                <div class="candidate__child__detail">
+                                    <p>●学生時代力を入れたこと<br>
+                                    大学時代から始めたブラジリアン柔術。</p>
+                                    <p>●写真で自己紹介<br>
+                                    ブラジリアン柔術の道場に行く機会が多いです。日々課題に向き合い鍛錬しています。汗を流すことで心も体もリフレッシュできますよ。</p>
+                                </div>
+                            </div>
+                            <div class="candidate__child">
+                                <div class="candidate__child__info">
+                                    <figure><img src="../../images/voice/voice2/img_profile06.png"></figure>
+                                    <div class="candidate__child__info--name">
+                                        <h3>HATORI</h3>
+                                        <p>学芸学部　国際関係学科　開発経済学</p>
+                                    </div>
+                                </div>
+                                <div class="candidate__child__detail">
+                                    <p>●学生時代力を入れたこと<br>
+                                    タイの国際機関での1年間のインターンシップ。国際会議の運営責任者として奔放。</p>
+                                    <p>●写真で自己紹介<br>
+                                    料理と映画にはまっています。料理では、手作り弁当を持って近所の公園へピクニックに出かけたりしています。映画は、アクション映画が好きで、カーアクションに憧れ、マニュアル免許に挑戦しましたが、途中で挫折しちゃいました。</p>
+                                </div>
+                            </div>
+                            <div class="candidate__child">
+                                <div class="candidate__child__info">
+                                    <figure><img src="../../images/voice/voice2/img_profile07.png"></figure>
+                                    <div class="candidate__child__info--name">
+                                        <h3>MATOBA</h3>
+                                        <p>社会科学部　社会科学科</p>
+                                    </div>
+                                </div>
+                                <div class="candidate__child__detail">
+                                    <p>●学生時代力を入れたこと<br>
+                                    サークルの幹事長。また、趣味の麻雀では柔軟な対応力を養う。</p>
+                                    <p>●写真で自己紹介<br>
+                                    自分への挑戦課題として、鹿児島から博多まで歩きました。その時は挑戦を過酷なものにするため下駄を履きました、写真は実は学ラン姿ですが、時期はなんと8月。タフな精神が取り柄です(笑）</p>
+                                </div>
+                            </div>
+                            <div class="candidate__child">
+                                <div class="candidate__child__info">
+                                    <figure><img src="../../images/voice/voice2/img_profile08.png"></figure>
+                                    <div class="candidate__child__info--name">
+                                        <h3>YOSHINAGA</h3>
+                                        <p>経済学部</p>
+                                    </div>
+                                </div>
+                                <div class="candidate__child__detail">
+                                    <p>●学生時代力を入れたこと<br>
+                                    論文大会へのチーム参加と入選獲得。メンバーの意欲向上に力を注ぐ。</p>
+                                    <p>●写真で自己紹介<br>
+                                    ドライブに最近はまっています。自分の車は持っていないので、家族の車を借りてたまに近所を走ります。まだまだ初心者ですが、余裕ができたら友達と遠出してみたいと思っています。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brief-introduction">
+                            <p>DOWAのエントリーシートでは、ガクチカと誰にも負けないくらい熱中したことが聞かれます。私たちが実際に書いたエントリーシートを公開します。</p>
+                        </div>
+                        <div class="competence">
+                            <h2>ガクチカ</h2>
+                            <div class="competence__quote competence__quote--right">
+                                <div class="competence__quote__answer">
+                                    <p>学生時代に最も打ち込んできたことは、研究活動。企業との共同研究に加え、大きなプロジェクトの一員であり、重要な役割を担うことになりました。多くの実験や分析を効率よく行い、頻繁に開催される報告会の資料作りにも全力で取り組んでいます。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>HARANO</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice04.png" alt=""></figure>
+                                </div>
+                            </div>
+                            <div class="competence__quote competence__quote--left">
+                                <div class="competence__quote__answer">
+                                    <p>ブラジリアン柔術という格闘技に熱中していました。マット上のチェスと呼ばれるほどテクニックが重視されるスポーツなので、練習ごとにノートをつけて技の整理を行いました。結果としてできる技も100個に増え、試行錯誤することの大切さを学びました。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>KAWAI</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice05.png" alt=""></figure>
+                                </div>
+                            </div>
+                            <div class="competence__quote competence__quote--right">
+                                <div class="competence__quote__answer">
+                                    <p>歩くことを目的としたサークルの幹事長として、夏合宿では最後尾を盛り上げながら全員完歩に導きました。また60年の伝統がある「100キロハイク」では、個性の強いメンバーをまとめ、タフな精神力が養われました。また、趣味の麻雀では柔軟な対応力が養われたと思います(笑)。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>MATOBA</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice06.png" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="competence">
+                            <h2>私が誰にも負けないくらい熱中したこと</h2>
+                            <div class="competence__quote competence__quote--left">
+                                <div class="competence__quote__answer">
+                                    <p>高校・大学で弓道に熱中。簡単には上達しないので、根気強く毎日欠かさず練習して、自信を持って大会に臨めるよう努めました。大学では主将を務め、チームとして結果を出す難しさに悩むこともありました。でも苦労した分学んだことも多かったと感じています。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>HIRAYABA</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice01.png" alt=""></figure>
+                                </div>
+                            </div>
+                            <div class="competence__quote competence__quote--right">
+                                <div class="competence__quote__answer">
+                                    <p>入学当初、実家から大学まで片道３時間の通学をしていました。一人暮らしの物件探しが難航し、それなら実家から通おうというのが理由です。始発電車に乗っていましたが、無遅刻・無欠席でした。限られた時間の中でも部活動にも参加し、効率的な時間の使い方を身につけることができました。長距離通学を乗り越えたバイタリティは誰にも負けません。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>YASHINAGA</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice02.png" alt=""></figure>
+                                </div>
+                            </div>
+                            <div class="competence__quote competence__quote--left">
+                                <div class="competence__quote__answer">
+                                    <p>私が誰にも負けないくらい熱中していたことは、中学校時代のソフトテニスです。朝は誰よりも早く学校に行き、昼休みや休日も練習していました。その結果エースとして個人戦や団体戦に出場し、最終的には市の大会で３位に入賞しました。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>HARANO</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice03.png" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brief-introduction">
+                            <p>こんなエントリーシートを書いた私たちが、DOWAに入ってやりたいと考えていることを紹介します。</p>
+                        </div>
+                        <div class="competence">
+                            <h2>DOWAに入ってからやりたいこと</h2>
+                            <div class="competence__quote competence__quote--left">
+                                <div class="competence__quote__answer">
+                                    <p>塾講師のアルバイトで、「誰かの“できない”を“できた”に変える」ことにやりがいを見いだしました。入社後はお客様の要望を一つ一つ達成し、お客様が「DOWAだからできた」と思っていただけるよう、技術者として大学で培ってきた知識や経験を還元していきたいです。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>HASIMOTO</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice07.png" alt=""></figure>
+                                </div>
+                            </div>
+                            <div class="competence__quote competence__quote--right">
+                                <div class="competence__quote__answer">
+                                    <p>生産技術職を希望しているので、設備の面から仕事に携わる方が安全に働きやすい環境作りをしていきたいと思います。そのために効率的な運用を追求し、他部署とも円滑にコミュニケーションを取っていきたいです。間接的に環境や資源を守ることにつながり、多くの人に貢献できるはずと考えています。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>SAKAKI</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice10.png" alt=""></figure>
+                                </div>
+                            </div>
+                            <div class="competence__quote competence__quote--left">
+                                <div class="competence__quote__answer">
+                                    <p>生産管理の仕事を通じて、生産現場の知識、社会人としての基礎を得た後に、営業職として活躍したいです。海外経験や語学力を活かせると、さらに嬉しいですね。将来は、家庭と仕事を両立させて、女性活躍のトップランナーになりたいです！</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>HATORI</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice09.png" alt=""></figure>
+                                </div>
+                            </div>
+                            <div class="competence__quote competence__quote--right">
+                                <div class="competence__quote__answer">
+                                    <p>元々車が好きで、自動車が社会に与える影響の大きさを感じてきました。環境問題が意識され、HV車、EV車の需要が高まる中で自動車部品に求められる新たな可能性をDOWAの技術力で支えていきたいです。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>KAWAI</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice13.png" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brief-introduction">
+                            <p>就活やDOWAの選考で印象に残った思い出を紹介します。</p>
+                        </div>
+                        <div class="competence">
+                            <h2>就活エピソード</h2>
+                            <div class="competence__quote competence__quote--right">
+                                <div class="competence__quote__answer">
+                                    <p>ある面接で座右の銘を聞かれました。予想外で一瞬頭が真っ白になり、とっさに頭の中に浮かんだ言葉は「七転び八起き」と「七転八倒」。焦っていたため、つい後者を口にしてしまいました。終了後に調べてみると「七転八倒」が激しく苦しみ転げまわる意味だと知って恥ずかしくなりました。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>SAKAKI</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice10.png" alt=""></figure>
+                                </div>
+                            </div>
+                            <div class="competence__quote competence__quote--left">
+                                <div class="competence__quote__answer">
+                                    <p>パソコンでESを何回も書き直し、ブラインドタッチが上達しました。私は非鉄金属や鉄鋼業界を中心に就活。実は父が鉄鋼業界に勤めていたので、志望動機や入社してやりたいことなどを添削してもらいました。大学生になり、父と話す機会が少なくなったのですが、今では2人で焼肉に行く仲となりました。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>KAWAI</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice13.png" alt=""></figure>
+                                </div>
+                            </div>
+                            <div class="competence__quote competence__quote--right">
+                                <div class="competence__quote__answer">
+                                    <p>私の大学院修了と弟の学部卒業が重なり、二人とも同時期に就職活動をしていました。お互いの志望している業界は違いましたが、近況などを話し合っていました。友人とは違って、ゆるくいろいろと話したのも就職活動の一つの思い出です。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>HIRAYAMA</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice12.png" alt=""></figure>
+                                </div>
+                            </div>
+                            <div class="competence__quote competence__quote--left">
+                                <div class="competence__quote__answer">
+                                    <p>コロナ禍による影響がなかった頃に参加したインターンシップで、良い仲間と出会いました。グループワークを通して意気投合し、連絡を取り合うようになりました。オンラインでの就活がメインになっても、行き詰った時にはお互い励まし合い、就活を乗り越えました。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>YOSHINAGA</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice14.png" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="competence">
+                            <h2>DOWAの選考で印象に残ったこと</h2>
+                            <div class="competence__quote competence__quote--left">
+                                <div class="competence__quote__answer">
+                                    <p>最初の質問が「無表情と言われない？」というもの。よくある質問を想定していた私は、とても驚かされました。その後も意識していなかったことを掘り下げていく質問をされ、ありのままの自分を伝えられたと思います。「大好きなスープカレーのPRをしてください」と言われたのにはビックリし、一生忘れない思い出になりました。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>HASHIMOTO</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice15.png" alt=""></figure>
+                                </div>
+                            </div>
+                            <div class="competence__quote competence__quote--right">
+                                <div class="competence__quote__answer">
+                                    <p>面接が楽しかったというか、もっと面接での会話を続けたいと思いました。他社と違い、私の話を深く傾聴してくれ、私を受け入れてくれていると強く感じました。そのおかげで、私も自分らしく話すことができました。あまりの心地良さに、もっと長く面接を続けて欲しいと思いました。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>HATORI</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice16.png" alt=""></figure>
+                                </div>
+                            </div>
+                            <div class="competence__quote competence__quote--left">
+                                <div class="competence__quote__answer">
+                                    <p>同じ会社の中でも、事業によって雰囲気や求められるスキルが違うと考え、面接時に「面接を通じて感じた事業に対する私の適性」を伺ったところ、短い面接時間の中で真剣に私のことを分析し、率直な感想とアドバイスをいただきました。人を大切にする風土を強く感じました。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>MATOBA</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice17.png" alt=""></figure>
+                                </div>
+                            </div>
+                            <div class="competence__quote competence__quote--right">
+                                <div class="competence__quote__answer">
+                                    <p>コロナが流行り始めたころ、他社は対面での面接を行っていましたが、DOWAは早々にWeb面接に変更するなどスピーディーさに好印象を抱きました。また、私個人に興味を持ってくれ、気持ちよく面接を受けることができました。</p>
+                                </div>
+                                <div class="competence__quote__candidate">
+                                    <p>HARANO</p>
+                                    <figure><img src="../../images/voice/voice2/img_voice11.png" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="voice-bttn-link">
+                    <a href="#link" class="hover-effect active"><span class="font24b">内定者の声</span></a>
+                    <a href="#link" class="hover-effect"><span class="font24b">若手社員成長の軌跡</span></a>
+                    <a href="#link" class="hover-effect"><span class="font24b">360度拠点紹介</span></a>
+                    <a href="#link" class="hover-effect"><span class="font24b">若手社員の研修参加レポート</span></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src='../../js/plugin/d3/jquery-2.2.4.min.js'></script>
+    <script src='../../js/plugin/aos/aos.js'></script>
+    <script src='../../js/plugin/d3/d3.min.js'></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/voice.js"></script>
+</body>
+</html>
