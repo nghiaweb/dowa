@@ -12,24 +12,20 @@ $c-main: #02899f;
     font-family: 'Roboto', sans-serif;
 }
 
-@mixin ipadpro{
-    @media only screen and (max-width: 1024px){
+@mixin ipadpro {
+    @media only screen and (max-width: 1024px) {
         @content
     }
 }
 
-@mixin mobile{
-    @media only screen and (max-width: 768px){
+@mixin mobile {
+    @media only screen and (max-width: 768px) {
         @content
     }
 }
 
 
 #training {
-
-    /**
-     * common
-     */
 
     .color-green {
         color: #b0dd1e;
@@ -89,10 +85,6 @@ $c-main: #02899f;
         display: flex;
     }
 
-    /**
-     * heading css
-     * -----------------------
-     */
     .heading {
         font-size: 4rem;
         color: $c-main;
@@ -101,7 +93,7 @@ $c-main: #02899f;
         line-height: 1;
         margin-top: 1rem;
 
-        @include mobile{
+        @include mobile {
             font-size: 2rem;
         }
 
@@ -110,7 +102,7 @@ $c-main: #02899f;
         }
     }
 
-    .sub-heading{
+    .sub-heading {
         margin-top: 3rem;
     }
 
@@ -125,7 +117,8 @@ $c-main: #02899f;
             color: #333;
             font-size: 2.4rem;
             font-weight: 700;
-            @include mobile{
+
+            @include mobile {
                 font-size: 2rem;
             }
         }
@@ -135,14 +128,11 @@ $c-main: #02899f;
         font-size: 1.6rem;
         color: #333;
         letter-spacing: 0.1rem;
-        @include mobile{
+
+        @include mobile {
             font-size: 1.4rem;
         }
     }
-
-    /**
-     * background image
-     */
 
     .bg-decoration {
         position: absolute;
@@ -150,13 +140,6 @@ $c-main: #02899f;
         left: 0;
         z-index: -1;
     }
-
-
-    /**
-     * step css
-     * -------------------------------
-     */
-
 
     .step {
         padding-bottom: 4rem;
@@ -167,7 +150,7 @@ $c-main: #02899f;
             padding-top: 4rem;
             position: relative;
 
-            @include mobile{
+            @include mobile {
                 padding-top: 0;
             }
 
@@ -175,13 +158,14 @@ $c-main: #02899f;
                 display: block;
             }
         }
-        &__content{
+
+        &__content {
             position: absolute;
             top: 0%;
             left: 0%;
             transform: translate(45px, -10px);
 
-            @include mobile{
+            @include mobile {
                 top: 50%;
                 left: 0;
                 right: 0%;
@@ -190,7 +174,7 @@ $c-main: #02899f;
         }
 
         &__name {
-            
+
             color: #008ea0;
             font-weight: 700;
             font-size: 2.4rem;
@@ -201,11 +185,12 @@ $c-main: #02899f;
                 line-height: 1;
             }
 
-            @include mobile{
+            @include mobile {
                 text-align: center;
-                font-size: 2rem;
-                span{
-                    font-size: 2rem;
+                font-size: 4vw;
+
+                span {
+                    font-size: 4vw;
                 }
             }
         }
@@ -218,7 +203,7 @@ $c-main: #02899f;
         min-width: 12rem;
         height: 12rem;
 
-        @include mobile{
+        @include mobile {
             width: 4rem;
             min-width: 4rem;
             height: 4rem;
@@ -237,36 +222,11 @@ $c-main: #02899f;
         }
     }
 
-    /**
-     * transition: all .3s ease;
-            &:hover{
-                opacity: .8;
-            }
-
-     * end-common -------------------------------------------------------
-     * ----------------------------------------------------------
-     * ----------------------------------------------------
-     * -----------------------------------------------
-     * ----------------------------
-     * ----------------------
-     * ----------------
-     * ---------
-     * -----
-     * --
-     * -
-     */
-
-
-    /**
-     * train css
-     * ------------------------------------
-     */
-
     .train {
         text-align: center;
         padding: 0 4rem;
 
-        @include mobile{
+        @include mobile {
             padding: 0;
         }
 
@@ -362,17 +322,15 @@ $c-main: #02899f;
         }
     }
 
-    /**
-     * voice css
-     * ------------------------------------
-     */
     .voice {
         position: relative;
         margin-top: 8rem;
         overflow: hidden;
-        @include mobile{
+
+        @include mobile {
             margin-top: 4rem;
         }
+
         &__inner {
 
             .top-img {
@@ -381,7 +339,8 @@ $c-main: #02899f;
                 border-radius: 3rem;
                 overflow: hidden;
                 margin-top: 5rem;
-                @include mobile{
+
+                @include mobile {
                     border-radius: 1rem;
                 }
 
@@ -419,7 +378,7 @@ $c-main: #02899f;
             width: 100%;
             bottom: 0;
 
-            @include mobile{
+            @include mobile {
                 top: 40vw;
             }
 
@@ -431,23 +390,17 @@ $c-main: #02899f;
         }
     }
 
-
-    /**
-     * user comment css
-     * ------------------------------------
-     */
-
     .comment-area {
         padding-top: 7.5rem;
         position: relative;
 
-        .flex{
+        .flex {
             max-width: calc(50% + 576px);
             width: 100%;
             margin-left: auto;
             padding: 0 2rem;
 
-            @include ipadpro{
+            @include ipadpro {
                 max-width: 100%;
                 flex-direction: column-reverse;
             }
@@ -456,9 +409,10 @@ $c-main: #02899f;
         .comment {
             width: 100%;
             max-width: calc(800px);
+
             // max-width: calc(50% + 240px);
             // 
-            @include ipadpro{
+            @include ipadpro {
                 max-width: 100%;
                 margin-top: 5rem;
             }
@@ -467,7 +421,8 @@ $c-main: #02899f;
                 width: 100%;
                 display: flex;
                 margin-bottom: 5rem;
-                @include mobile{
+
+                @include mobile {
                     margin-bottom: 3rem;
                 }
             }
@@ -477,7 +432,7 @@ $c-main: #02899f;
                 padding-left: 3rem;
                 padding-right: 3rem;
 
-                @include mobile{
+                @include mobile {
                     padding-left: 1rem;
                     padding-right: 0;
                 }
@@ -492,7 +447,7 @@ $c-main: #02899f;
             min-width: 510px;
             padding-left: 5rem;
 
-            @include ipadpro{
+            @include ipadpro {
                 max-width: 100%;
                 display: flex;
                 align-items: center;
@@ -501,7 +456,7 @@ $c-main: #02899f;
                 padding: 0;
             }
 
-            @include mobile{
+            @include mobile {
                 min-width: 1px;
             }
 
@@ -527,15 +482,16 @@ $c-main: #02899f;
                 top: -6.5rem;
                 z-index: -1;
 
-                @include ipadpro{
+                @include ipadpro {
                     position: static;
                     width: 28rem;
                     height: 28rem;
                 }
             }
+
             .circle--small,
             .circle--big {
-                @include mobile{
+                @include mobile {
                     width: 40vw;
                     height: 40vw;
                     border-width: .5rem;
@@ -544,12 +500,6 @@ $c-main: #02899f;
         }
     }
 
-
-
-    /**
-     * lecturer css
-     * ----------------------------------------------
-     */
     .lecturer-area {
         position: relative;
         padding-top: 7.5rem;
@@ -557,7 +507,7 @@ $c-main: #02899f;
         overflow: hidden;
         background-image: url('../images/training/bg_point.jpg');
 
-        @include mobile{
+        @include mobile {
             padding-top: 4rem;
             background-size: contain;
         }
@@ -565,7 +515,8 @@ $c-main: #02899f;
         .bg-decoration {
             right: 0;
             bottom: 0;
-            img{
+
+            img {
                 height: 100%;
             }
         }
@@ -573,7 +524,8 @@ $c-main: #02899f;
         .heading {
             color: #fff;
             margin-bottom: 5rem;
-            @include mobile{
+
+            @include mobile {
                 margin-bottom: 3rem;
             }
         }
@@ -589,7 +541,7 @@ $c-main: #02899f;
         border: 2rem solid #02899f;
         overflow: hidden;
 
-        @include mobile{
+        @include mobile {
             border-width: .5rem;
             border-radius: 1rem;
             padding: 2rem;
@@ -605,12 +557,13 @@ $c-main: #02899f;
             border-radius: 50%;
             display: block;
 
-            @include mobile{
+            @include mobile {
                 padding: 0;
                 width: 24rem;
                 min-width: 24rem;
                 height: 24rem;
-                img{
+
+                img {
                     height: 100%;
                 }
             }
@@ -618,7 +571,8 @@ $c-main: #02899f;
 
         &-infor {
             padding: 0 2rem;
-            @include mobile{
+
+            @include mobile {
                 text-align: center;
             }
         }
@@ -627,15 +581,15 @@ $c-main: #02899f;
         &-logo {
             width: 24rem;
             margin-bottom: 2rem;
-            
-            @include mobile{
+
+            @include mobile {
                 margin: 2rem auto;
             }
 
-            &.len{
+            &.len {
                 width: 40rem;
 
-                @include mobile{
+                @include mobile {
                     width: 22rem;
                 }
             }
@@ -654,39 +608,34 @@ $c-main: #02899f;
             margin-top: 1.5rem;
             margin-bottom: 2rem;
 
-            @include mobile{
+            @include mobile {
                 font-size: 1.8rem;
                 line-height: 1.2;
             }
         }
     }
 
-
-    /**
-     * chat box 
-     * ------------------------------------------------
-     */
-    .chat-area{
+    .chat-area {
         padding: 0 6rem;
         margin-top: 5rem;
 
-        @include mobile{
+        @include mobile {
             padding: 2rem;
             margin-top: 3rem;
 
         }
 
-        .chat-item{
+        .chat-item {
             position: relative;
             width: 100%;
             max-width: 74%;
             margin-top: .5rem;
 
-            @include mobile{
+            @include mobile {
                 max-width: 100%;
             }
 
-            &__inside{
+            &__inside {
                 width: 100%;
                 padding: 4rem;
                 display: flex;
@@ -695,11 +644,11 @@ $c-main: #02899f;
                 overflow: hidden;
                 box-shadow: 0 0 8px rgba(#000, .3);
 
-                @include mobile{
+                @include mobile {
                     padding: 2rem;
                 }
 
-                span{
+                span {
                     position: relative;
                     top: -5px;
                     line-height: 1;
@@ -709,37 +658,43 @@ $c-main: #02899f;
                     padding-top: 1rem;
                     display: block;
                 }
-                .text-desc{
+
+                .text-desc {
                     margin-left: 2.5rem;
-                    @include mobile{
+
+                    @include mobile {
                         margin-left: 1.5rem;
                     }
                 }
             }
 
-            &::before, &::after{
+            &::before,
+            &::after {
                 content: '';
                 width: 2rem;
                 height: 2rem;
                 position: absolute;
                 transform-origin: top;
             }
-            &::before{
+
+            &::before {
                 box-shadow: 0 0 4px rgba(#000, .3);
                 z-index: -1;
             }
 
-            &:nth-of-type(odd){
-                
-                .chat-item__inside{
+            &:nth-of-type(odd) {
+
+                .chat-item__inside {
 
                     background-color: #f2e54a;
-                    span{
+
+                    span {
                         color: #333;
                     }
                 }
 
-                &::before, &::after{
+                &::before,
+                &::after {
                     background-color: #f2e54a;
                     left: 0;
                     top: 50%;
@@ -748,23 +703,25 @@ $c-main: #02899f;
                 }
             }
 
-            &:nth-of-type(even){
+            &:nth-of-type(even) {
                 margin-left: auto;
                 top: -2.5rem;
 
-                @include mobile{
+                @include mobile {
                     top: -1.2rem;
 
                 }
 
-                .chat-item__inside{
+                .chat-item__inside {
                     background-color: #fff;
-                    span{
+
+                    span {
                         color: #02899f;
                     }
                 }
 
-                &::before, &::after{
+                &::before,
+                &::after {
                     background-color: #fff;
                     right: 0;
                     top: 50%;
@@ -775,24 +732,22 @@ $c-main: #02899f;
         }
     }
 
-
-
-    /**
-     * content
-     * ---------------------------------
-     */
-    
-    .content{
+    .content {
         margin-top: 11rem 0;
-        @include mobile{
+
+        @include mobile {
             margin: 5rem 0;
         }
-        .step{
+
+        .step {
             padding: 0;
+            @include mobile{
+                overflow: hidden;
+            }
 
-            &.step-03{
+            &.step-03 {
 
-                .step__container{
+                .step__container {
                     width: 100%;
                     max-width: 63rem;
                     height: 25rem;
@@ -800,21 +755,24 @@ $c-main: #02899f;
                     padding-top: 0;
                     margin-top: 2rem;
 
-                    @include mobile{
+                    @include mobile {
                         max-width: 100%;
                     }
 
-                    img{
+                    img {
                         height: 100%;
+                        @include mobile{
+                            transform: scale(2);
+                        }
                     }
                 }
 
-                .step__content{
+                .step__content {
                     left: 7.5rem;
                     right: 7.5rem;
                     transform: translate(0, -34px);
 
-                    @include mobile{
+                    @include mobile {
                         left: 1rem;
                         right: 1rem;
                         top: 50%;
@@ -823,9 +781,13 @@ $c-main: #02899f;
                 }
             }
 
-            &.step-04{
+            &.step-04 {
 
-                .step__container{
+                @include mobile{
+                    margin-top: 3rem;
+                }
+
+                .step__container {
                     width: 100%;
                     max-width: 81.5rem;
                     height: 20rem;
@@ -833,31 +795,79 @@ $c-main: #02899f;
                     padding-top: 0;
                     margin-top: 4rem;
                     margin-left: auto;
-                    img{
+
+
+
+                    img {
                         height: 100%;
+                        @include mobile{
+                            transform: scale(2);
+                        }
                     }
                 }
 
-                .step__content{
+                .step__content {
                     left: 14rem;
                     right: 0;
                     transform: translate(0, -34px);
 
-                    @include mobile{
+                    @include mobile {
                         left: 1rem;
                         right: 1rem;
                         top: 50%;
                         transform: translate(0, -50%);
                     }
 
-                    .text-desc{
+                    .text-desc {
                         padding-right: 13rem;
-                        @include mobile{
+
+                        @include mobile {
                             padding-right: 0;
                         }
                     }
                 }
             }
         }
+    }
+
+    .voice-bttn-link {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 120px auto 160px auto;
+        color: white;
+    }
+
+    @media screen and (max-width: 768px) {
+        .voice-bttn-link {
+            margin: 60px auto;
+            justify-content: center;
+        }
+    }
+
+    .voice-bttn-link>* {
+        max-width: calc(50% - 10px);
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .voice-bttn-link>* {
+            min-width: 290px;
+            padding: 0px 5px;
+        }
+    }
+
+    .voice-bttn-link>* span {
+        display: block;
+        line-height: 6rem;
+        border-radius: 30px;
+        background-color: #ff8a16;
+        text-align: center;
+    }
+
+    .voice-bttn-link>*.active {
+        opacity: 0.6;
     }
 }
