@@ -51,7 +51,7 @@
     count = -1;
     timeDelay = 100;
     var viewportTop = getScrollTop(),
-        viewportBottom = viewportTop + getViewportHeight();
+        viewportBottom = viewportTop + getViewportHeight() - 100;
     $('.inview, .scroll').each(function () {
       var $el = $(this),
           elTop = offsetTop(this),
@@ -71,8 +71,7 @@
           var eleTarget = $el.trigger('inview', [true, visPart]);
           if(elTop < viewportBottom) {
             if(eleTarget.data('function')) {
-              eleTarget.data('function')('#' + eleTarget.children('svg').id);
-              console.log(eleTarget.data('function'));
+                eval(eleTarget.data('function'));
             }else {
               checkClass(eleTarget, ArrayClass);
             }
