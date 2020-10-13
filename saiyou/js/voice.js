@@ -1,3 +1,16 @@
+$('.voice-bttn .voice-tab').on('click', function() {
+    if(!$(this).is('active')) {
+        $('.voice-bttn .voice-tab').removeClass('active');
+        $('.trans-tap .voice-main').removeClass('active')
+        $(this).addClass('active');
+        $('.trans-tap .voice-main').eq($(this).data('order')).addClass('active');
+        // console.log($(this).data('order'));
+    }
+})
+
+
+// not run browser internet explorer
+
 let dataColor = ['#b0dd1e', '#f2e54a', '#008ea0', '#ff8a16', '#ae5291', '#ed43ac', '#a3588e']
 var pie = d3.pie().value(function(d){return d;}).sort(null);
 
