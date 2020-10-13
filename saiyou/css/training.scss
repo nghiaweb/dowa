@@ -12,6 +12,18 @@ $c-main: #02899f;
     font-family: 'Roboto', sans-serif;
 }
 
+@mixin ipadpro{
+    @media only screen and (max-width: 1024px){
+        @content
+    }
+}
+
+@mixin mobile{
+    @media only screen and (max-width: 768px){
+        @content
+    }
+}
+
 
 #training {
 
@@ -87,10 +99,19 @@ $c-main: #02899f;
         font-weight: 700;
         text-align: left;
         line-height: 1;
+        margin-top: 1rem;
+
+        @include mobile{
+            font-size: 2rem;
+        }
 
         &.center {
             text-align: center;
         }
+    }
+
+    .sub-heading{
+        margin-top: 3rem;
     }
 
     .title {
@@ -104,15 +125,18 @@ $c-main: #02899f;
             color: #333;
             font-size: 2.4rem;
             font-weight: 700;
+            @include mobile{
+                font-size: 2rem;
+            }
         }
     }
 
     .text-desc {
         font-size: 1.6rem;
         color: #333;
-
-        span {
-            display: block;
+        letter-spacing: 0.1rem;
+        @include mobile{
+            font-size: 1.4rem;
         }
     }
 
@@ -143,6 +167,10 @@ $c-main: #02899f;
             padding-top: 4rem;
             position: relative;
 
+            @include mobile{
+                padding-top: 0;
+            }
+
             img {
                 display: block;
             }
@@ -152,6 +180,13 @@ $c-main: #02899f;
             top: 0%;
             left: 0%;
             transform: translate(45px, -10px);
+
+            @include mobile{
+                top: 50%;
+                left: 0;
+                right: 0%;
+                transform: translate(0, -50%);
+            }
         }
 
         &__name {
@@ -165,14 +200,29 @@ $c-main: #02899f;
                 font-size: 12rem;
                 line-height: 1;
             }
+
+            @include mobile{
+                text-align: center;
+                font-size: 2rem;
+                span{
+                    font-size: 2rem;
+                }
+            }
         }
     }
 
 
     .avatar {
         display: block;
+        width: 12rem;
         min-width: 12rem;
         height: 12rem;
+
+        @include mobile{
+            width: 4rem;
+            min-width: 4rem;
+            height: 4rem;
+        }
 
         &.avatar--green {
             background-color: #b0dd1e;
@@ -216,12 +266,17 @@ $c-main: #02899f;
         text-align: center;
         padding: 0 4rem;
 
+        @include mobile{
+            padding: 0;
+        }
+
         &__inner {}
 
         &__table {
             margin-top: 5rem;
             padding-bottom: 1rem;
             overflow-x: auto;
+            overflow-y: hidden;
 
             .t-table {
                 margin-top: 3rem;
@@ -315,7 +370,9 @@ $c-main: #02899f;
         position: relative;
         margin-top: 8rem;
         overflow: hidden;
-
+        @include mobile{
+            margin-top: 4rem;
+        }
         &__inner {
 
             .top-img {
@@ -324,6 +381,9 @@ $c-main: #02899f;
                 border-radius: 3rem;
                 overflow: hidden;
                 margin-top: 5rem;
+                @include mobile{
+                    border-radius: 1rem;
+                }
 
                 img {
                     width: 100%;
@@ -357,20 +417,17 @@ $c-main: #02899f;
             opacity: .3;
             overflow: hidden;
             width: 100%;
+            bottom: 0;
+
+            @include mobile{
+                top: 40vw;
+            }
+
             img {
+                height: 100%;
                 filter: blur(10px);
             }
 
-            // &::before{
-            //     content: '';
-            //     width: 100%;
-            //     height: 100%;
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            //     background-color: #ddd;
-            //     opacity:.6;
-            // }
         }
     }
 
@@ -381,30 +438,72 @@ $c-main: #02899f;
      */
 
     .comment-area {
+        padding-top: 7.5rem;
+        position: relative;
+
+        .flex{
+            max-width: calc(50% + 576px);
+            width: 100%;
+            margin-left: auto;
+            padding: 0 2rem;
+
+            @include ipadpro{
+                max-width: 100%;
+                flex-direction: column-reverse;
+            }
+        }
 
         .comment {
             width: 100%;
-            max-width: 74%;
+            max-width: calc(800px);
+            // max-width: calc(50% + 240px);
+            // 
+            @include ipadpro{
+                max-width: 100%;
+                margin-top: 5rem;
+            }
 
             &-block {
                 width: 100%;
                 display: flex;
-                margin-top: 5rem;
+                margin-bottom: 5rem;
+                @include mobile{
+                    margin-bottom: 3rem;
+                }
             }
 
             &-wrap {
                 width: 100%;
                 padding-left: 3rem;
+                padding-right: 3rem;
+
+                @include mobile{
+                    padding-left: 1rem;
+                    padding-right: 0;
+                }
             }
         }
 
 
 
         .comment-aside {
-            width: 100%;
-            max-width: 26%;
-            position: relative;
-            padding-left: 3rem;
+
+            max-width: 540px;
+            min-width: 510px;
+            padding-left: 5rem;
+
+            @include ipadpro{
+                max-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                padding: 0;
+            }
+
+            @include mobile{
+                min-width: 1px;
+            }
 
             .circle--small,
             .circle--big {
@@ -417,7 +516,6 @@ $c-main: #02899f;
                 width: 28rem;
                 height: 28rem;
                 border: 2rem solid #02899f;
-                top: 5rem;
             }
 
             .circle--big {
@@ -426,8 +524,22 @@ $c-main: #02899f;
                 border: 2rem solid #f2e54a;
                 position: relative;
                 left: 5.5rem;
-                top: -3rem;
+                top: -6.5rem;
                 z-index: -1;
+
+                @include ipadpro{
+                    position: static;
+                    width: 28rem;
+                    height: 28rem;
+                }
+            }
+            .circle--small,
+            .circle--big {
+                @include mobile{
+                    width: 40vw;
+                    height: 40vw;
+                    border-width: .5rem;
+                }
             }
         }
     }
@@ -443,14 +555,27 @@ $c-main: #02899f;
         padding-top: 7.5rem;
         padding-bottom: 6.5rem;
         overflow: hidden;
+        background-image: url('../images/training/bg_point.jpg');
+
+        @include mobile{
+            padding-top: 4rem;
+            background-size: contain;
+        }
 
         .bg-decoration {
             right: 0;
+            bottom: 0;
+            img{
+                height: 100%;
+            }
         }
 
         .heading {
             color: #fff;
             margin-bottom: 5rem;
+            @include mobile{
+                margin-bottom: 3rem;
+            }
         }
     }
 
@@ -464,6 +589,14 @@ $c-main: #02899f;
         border: 2rem solid #02899f;
         overflow: hidden;
 
+        @include mobile{
+            border-width: .5rem;
+            border-radius: 1rem;
+            padding: 2rem;
+            flex-direction: column;
+            align-items: center;
+        }
+
         &-avatar {
             min-width: 28rem;
             height: 24rem;
@@ -471,16 +604,41 @@ $c-main: #02899f;
             overflow: hidden;
             border-radius: 50%;
             display: block;
+
+            @include mobile{
+                padding: 0;
+                width: 24rem;
+                min-width: 24rem;
+                height: 24rem;
+                img{
+                    height: 100%;
+                }
+            }
         }
 
         &-infor {
             padding: 0 2rem;
+            @include mobile{
+                text-align: center;
+            }
         }
 
 
         &-logo {
             width: 24rem;
             margin-bottom: 2rem;
+            
+            @include mobile{
+                margin: 2rem auto;
+            }
+
+            &.len{
+                width: 40rem;
+
+                @include mobile{
+                    width: 22rem;
+                }
+            }
         }
 
         &-ver {
@@ -490,12 +648,16 @@ $c-main: #02899f;
 
         &-name {
             font-size: 2.4rem;
-            ;
             color: #02899f;
             display: block;
             line-height: 1;
             margin-top: 1.5rem;
             margin-bottom: 2rem;
+
+            @include mobile{
+                font-size: 1.8rem;
+                line-height: 1.2;
+            }
         }
     }
 
@@ -507,11 +669,22 @@ $c-main: #02899f;
     .chat-area{
         padding: 0 6rem;
         margin-top: 5rem;
+
+        @include mobile{
+            padding: 2rem;
+            margin-top: 3rem;
+
+        }
+
         .chat-item{
             position: relative;
             width: 100%;
             max-width: 74%;
             margin-top: .5rem;
+
+            @include mobile{
+                max-width: 100%;
+            }
 
             &__inside{
                 width: 100%;
@@ -521,15 +694,26 @@ $c-main: #02899f;
                 border-radius: 2rem;
                 overflow: hidden;
                 box-shadow: 0 0 8px rgba(#000, .3);
+
+                @include mobile{
+                    padding: 2rem;
+                }
+
                 span{
                     position: relative;
                     top: -5px;
                     line-height: 1;
                     font-size: 4rem;
                     font-weight: 700;
+                    align-self: flex-start;
+                    padding-top: 1rem;
+                    display: block;
                 }
                 .text-desc{
                     margin-left: 2.5rem;
+                    @include mobile{
+                        margin-left: 1.5rem;
+                    }
                 }
             }
 
@@ -567,6 +751,12 @@ $c-main: #02899f;
             &:nth-of-type(even){
                 margin-left: auto;
                 top: -2.5rem;
+
+                @include mobile{
+                    top: -1.2rem;
+
+                }
+
                 .chat-item__inside{
                     background-color: #fff;
                     span{
@@ -593,6 +783,10 @@ $c-main: #02899f;
      */
     
     .content{
+        margin-top: 11rem 0;
+        @include mobile{
+            margin: 5rem 0;
+        }
         .step{
             padding: 0;
 
@@ -604,7 +798,12 @@ $c-main: #02899f;
                     height: 25rem;
                     min-height: 25rem;
                     padding-top: 0;
-                    margin-top: 4rem;
+                    margin-top: 2rem;
+
+                    @include mobile{
+                        max-width: 100%;
+                    }
+
                     img{
                         height: 100%;
                     }
@@ -614,6 +813,13 @@ $c-main: #02899f;
                     left: 7.5rem;
                     right: 7.5rem;
                     transform: translate(0, -34px);
+
+                    @include mobile{
+                        left: 1rem;
+                        right: 1rem;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                    }
                 }
             }
 
@@ -637,12 +843,21 @@ $c-main: #02899f;
                     right: 0;
                     transform: translate(0, -34px);
 
+                    @include mobile{
+                        left: 1rem;
+                        right: 1rem;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                    }
+
                     .text-desc{
                         padding-right: 13rem;
+                        @include mobile{
+                            padding-right: 0;
+                        }
                     }
                 }
             }
         }
     }
-
 }
