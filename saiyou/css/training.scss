@@ -43,6 +43,30 @@ $c-main: #02899f;
         background-color: #ad5291;
     }
 
+    .color-orange {
+        color: #ff8a16;
+    }
+
+    .bg-orange {
+        background-color: #ff8a16;
+    }
+
+    .color-blue2 {
+        color: #3342fa;
+    }
+
+    .bg-blue2 {
+        background-color: #3342fa;
+    }
+
+    .color-yellow2 {
+        color: #f2e54a;
+    }
+
+    .bg-yellow2 {
+        background-color: #f2e54a;
+    }
+
     .color-default {
         color: #333;
     }
@@ -62,6 +86,7 @@ $c-main: #02899f;
         color: $c-main;
         font-weight: 700;
         text-align: left;
+        line-height: 1;
 
         &.center {
             text-align: center;
@@ -110,8 +135,9 @@ $c-main: #02899f;
 
 
     .step {
+        padding-bottom: 4rem;
 
-        &__step {
+        &__container {
             width: 100%;
             max-width: 53rem;
             padding-top: 4rem;
@@ -121,14 +147,17 @@ $c-main: #02899f;
                 display: block;
             }
         }
-
-        &-step {
+        &__content{
             position: absolute;
-            color: #008ea0;
-            font-weight: 700;
             top: 0%;
             left: 0%;
             transform: translate(45px, -10px);
+        }
+
+        &__name {
+            
+            color: #008ea0;
+            font-weight: 700;
             font-size: 2.4rem;
 
             span {
@@ -289,10 +318,6 @@ $c-main: #02899f;
 
         &__inner {
 
-            .heading {
-                text-align: center;
-            }
-
             .top-img {
                 max-width: 80rem;
                 width: 100%;
@@ -308,7 +333,7 @@ $c-main: #02899f;
             .step {
                 margin-top: 4rem;
 
-                &__step,
+                &__container,
                 &__desc {
                     margin-left: auto;
                 }
@@ -320,6 +345,7 @@ $c-main: #02899f;
 
                     p {
                         line-height: 2.5;
+                        min-height: 8rem;
                     }
                 }
 
@@ -330,7 +356,7 @@ $c-main: #02899f;
             top: 25rem;
             opacity: .3;
             overflow: hidden;
-
+            width: 100%;
             img {
                 filter: blur(10px);
             }
@@ -414,11 +440,17 @@ $c-main: #02899f;
      */
     .lecturer-area {
         position: relative;
+        padding-top: 7.5rem;
+        padding-bottom: 6.5rem;
+        overflow: hidden;
 
-        .bg-decoration {}
+        .bg-decoration {
+            right: 0;
+        }
 
         .heading {
             color: #fff;
+            margin-bottom: 5rem;
         }
     }
 
@@ -473,39 +505,142 @@ $c-main: #02899f;
      * ------------------------------------------------
      */
     .chat-area{
-        
+        padding: 0 6rem;
+        margin-top: 5rem;
         .chat-item{
             position: relative;
+            width: 100%;
+            max-width: 74%;
+            margin-top: .5rem;
 
             &__inside{
+                width: 100%;
                 padding: 4rem;
                 display: flex;
                 align-items: center;
                 border-radius: 2rem;
                 overflow: hidden;
-                box-shadow: 0 0 1rem rgba(#000, .6);
+                box-shadow: 0 0 8px rgba(#000, .3);
+                span{
+                    position: relative;
+                    top: -5px;
+                    line-height: 1;
+                    font-size: 4rem;
+                    font-weight: 700;
+                }
+                .text-desc{
+                    margin-left: 2.5rem;
+                }
             }
-            
+
+            &::before, &::after{
+                content: '';
+                width: 2rem;
+                height: 2rem;
+                position: absolute;
+                transform-origin: top;
+            }
+            &::before{
+                box-shadow: 0 0 4px rgba(#000, .3);
+                z-index: -1;
+            }
 
             &:nth-of-type(odd){
-                background-color: #f2e54a;
                 
+                .chat-item__inside{
 
-                &::before{
-                    content: '';
-                    width: 3rem;
-                    height: 6rem;
-                    position: absolute;
+                    background-color: #f2e54a;
+                    span{
+                        color: #333;
+                    }
+                }
+
+                &::before, &::after{
                     background-color: #f2e54a;
                     left: 0;
                     top: 50%;
-                    box-shadow: 0 0 10px black;
-                    transform: translate(-100%, -50%);
+                    transform-origin: top;
+                    transform: translate(0%, -50%) scaleX(1.5) rotate(45deg);
                 }
             }
 
             &:nth-of-type(even){
-                background-color: #fff;
+                margin-left: auto;
+                top: -2.5rem;
+                .chat-item__inside{
+                    background-color: #fff;
+                    span{
+                        color: #02899f;
+                    }
+                }
+
+                &::before, &::after{
+                    background-color: #fff;
+                    right: 0;
+                    top: 50%;
+                    transform-origin: top;
+                    transform: translate(100%, -50%) scaleX(1.5) rotate(45deg);
+                }
+            }
+        }
+    }
+
+
+
+    /**
+     * content
+     * ---------------------------------
+     */
+    
+    .content{
+        .step{
+            padding: 0;
+
+            &.step-03{
+
+                .step__container{
+                    width: 100%;
+                    max-width: 63rem;
+                    height: 25rem;
+                    min-height: 25rem;
+                    padding-top: 0;
+                    margin-top: 4rem;
+                    img{
+                        height: 100%;
+                    }
+                }
+
+                .step__content{
+                    left: 7.5rem;
+                    right: 7.5rem;
+                    transform: translate(0, -34px);
+                }
+            }
+
+            &.step-04{
+
+                .step__container{
+                    width: 100%;
+                    max-width: 81.5rem;
+                    height: 20rem;
+                    min-height: 20rem;
+                    padding-top: 0;
+                    margin-top: 4rem;
+                    margin-left: auto;
+                    img{
+                        height: 100%;
+                    }
+                }
+
+                .step__content{
+                    left: 14rem;
+                    right: 0;
+                    transform: translate(0, -34px);
+
+                    .text-desc{
+                        padding-right: 13rem;
+                    }
+                }
             }
         }
     }
