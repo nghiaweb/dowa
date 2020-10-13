@@ -767,13 +767,22 @@
     }
 }
 
+#training .content .step.step-03 {
+    margin-top: 10rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #training .content .step.step-03 {
+        margin-top: 0;
+    }
+}
+
 #training .content .step.step-03 .step__container {
     width: 100%;
     max-width: 63rem;
     height: 25rem;
     min-height: 25rem;
     padding-top: 0;
-    margin-top: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -807,6 +816,10 @@
     }
 }
 
+#training .content .step.step-04 {
+    margin-top: 4rem;
+}
+
 @media only screen and (max-width: 768px) {
     #training .content .step.step-04 {
         margin-top: 3rem;
@@ -819,7 +832,6 @@
     height: 20rem;
     min-height: 20rem;
     padding-top: 0;
-    margin-top: 4rem;
     margin-left: auto;
 }
 

@@ -252,7 +252,6 @@ $c-main: #02899f;
                 .t-head {
                     th {
                         height: 6rem;
-                        // padding: 2rem 3rem;
                         background-color: #67b8c5;
                         color: #fff;
                         font-weight: 700;
@@ -414,8 +413,6 @@ $c-main: #02899f;
             width: 100%;
             max-width: calc(800px);
 
-            // max-width: calc(50% + 240px);
-            // 
             @include ipadpro {
                 max-width: 100%;
                 margin-top: 5rem;
@@ -750,6 +747,11 @@ $c-main: #02899f;
             }
 
             &.step-03 {
+                margin-top: 10rem;
+
+                @include mobile{
+                    margin-top: 0;
+                }
 
                 .step__container {
                     width: 100%;
@@ -757,7 +759,6 @@ $c-main: #02899f;
                     height: 25rem;
                     min-height: 25rem;
                     padding-top: 0;
-                    margin-top: 2rem;
 
                     @include mobile {
                         max-width: 100%;
@@ -786,6 +787,7 @@ $c-main: #02899f;
             }
 
             &.step-04 {
+                margin-top: 4rem;
 
                 @include mobile{
                     margin-top: 3rem;
@@ -797,10 +799,7 @@ $c-main: #02899f;
                     height: 20rem;
                     min-height: 20rem;
                     padding-top: 0;
-                    margin-top: 4rem;
                     margin-left: auto;
-
-
 
                     img {
                         height: 100%;
