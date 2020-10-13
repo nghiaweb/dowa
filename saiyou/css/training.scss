@@ -26,6 +26,10 @@ $c-main: #02899f;
 
 
 #training {
+    margin: 290px 0 100px;
+    @include mobile{
+        margin: 100px 0 20px;
+    }
 
     .color-green {
         color: #b0dd1e;
